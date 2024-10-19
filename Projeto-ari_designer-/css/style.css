@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
+/* Inport */
+@import url('https://fonts.googleapis.com/css2?family=Diplomata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
 /* CONFIGURAÇÕES GLOBAIS */
 * {
     margin: 0px;
@@ -8,8 +12,6 @@
 }
 /* FIM CONFIGURAÇÕES GLOBAIS */
 
-@import url('https://fonts.googleapis.com/css2?family=Diplomata&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 @font-face{
     font-family: "AbrilFatface";/* Nome para a fonte. */
     src: url("../fontes/AbrilFatface-Regular.ttf");/* Onde está o arquivo. */
