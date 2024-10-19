@@ -280,7 +280,7 @@ aside {
     box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.281);
 }
 aside h3 {
-    width: 100%;
+    width: 50%;
     font-family: var(--fonte-extra);
     font-size: 2rem;
     border-bottom: 1px solid white;
