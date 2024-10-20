@@ -61,6 +61,10 @@ b {
     padding: 5px;
     text-align: center;
 }
+header {
+    right: 0px;
+    left: 0px;
+}
 header.header-container {
     display: flex;
     flex-direction: column;
@@ -162,28 +166,60 @@ main article {
     margin-top: 12rem;
 }
 /* @media sreen para position of the main */
+@media screen and (max-width: 767px) {
+    main article {
+        transition: 0s;
+        margin-top: 15rem;
+    }
+}
+@media screen and (max-width: 567px) {
+    main article {
+        transition: 0s;
+        margin-top: 18rem;
+    }
+}
 @media screen and (max-width: 554px) {
     main article {
         transition: 0s;
-        margin-top: 12rem;
+        margin-top: 18rem;
     }
 }
 @media screen and (max-width: 550px) {
     main article {
         transition: 0s;
-        margin-top: 15rem;
+        margin-top: 18rem;
+    }
+}
+@media screen and (max-width: 531px) {
+    main article {
+        transition: 0s;
+        margin-top: 18rem;
     }
 }
 @media screen and (max-width: 530px) {
     main article {
         transition: 0s;
-        margin-top: 15rem;
+        margin-top: 21rem;
     }
 }
 @media screen and (max-width: 478px) {
     main article {
         transition: 0s;
-        margin-top: 18rem;
+        margin-top: 21rem;
+    }
+}
+@media screen and (max-width: 415px) {
+    header.header-container {
+        width: auto;
+    }
+    main {
+        width: 85%;
+    }
+} 
+@media screen and (max-width: 283px) {
+    main article {
+        transition: 0s;
+        margin-top: 24rem;
     }
 }
 /* FIM @media sreen para position of the main */
@@ -309,11 +345,11 @@ aside p {
 aside ul {
     list-style-type: "\2705\00A0\00A0";/* \2705 = ✅ \00a0 = nbsp = espaço em quebra */
     list-style-position: inside;
-    columns: 2;
+    columns: 1;
     text-align: left;
 }
 aside ul li {
-    width: 120px;
+    width: 100%;
     font-family: var(--fonte-principal);
     color: var(--cor6);
     cursor: pointer;
