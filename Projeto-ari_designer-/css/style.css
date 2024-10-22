@@ -21,7 +21,7 @@
 /* VARIÁVEIS */
 :root {
     --cor0: #c5c8eb;
-    --cor1: #8394e1;
+    --cor1: #c3c9e5;
     --cor2: #3d48dc;
     --cor3: #2f31a8;
     --cor4: #1a1b5c;
@@ -39,6 +39,8 @@
 body {
     background-color: #c5ebd6;
     font-family: var(--fonte-padrao);
+    background-image: linear-gradient(5deg, black, blue, blue, black);
+    /* overflow: hidden; */
 }
 /* FIM BODY */
 
@@ -61,24 +63,17 @@ b {
     padding: 5px;
     text-align: center;
 }
-header {
-    right: 0px;
-    left: 0px;
-}
-header.header-container {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    width: 100%;
+.header-container {
+    width: 100vw;
     margin-top: -12px;
-    /* background-image: url("../imagens/Fundo.jpg"); */
-    background-image: linear-gradient(45deg, black, var(--cor5));
-    background-attachment: scroll;
-    background-position: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url("../imagens/Fundo.jpg");
     background-repeat: no-repeat;
     background-color: var(--cor4);
     background-size: 100% 100%;
     text-align: center;
+}
+.container-opacity {
+    background-color: #00000048;
 }
 header .box-logo {
     display: flex;
@@ -98,7 +93,7 @@ header h1 {
     font-weight: 200;
     font-style: normal;
     color: white;
-    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.267);
+    text-shadow: 8px 4px 8px black;
 }
 /* FIM HEADER */
 
@@ -162,66 +157,14 @@ main {
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
-main article {
-    margin-top: 12rem;
-}
+
 /* @media sreen para position of the main */
-@media screen and (max-width: 767px) {
+/* @media screen and (max-width: 767px) {
     main article {
         transition: 0s;
         margin-top: 15rem;
     }
-}
-@media screen and (max-width: 567px) {
-    main article {
-        transition: 0s;
-        margin-top: 18rem;
-    }
-}
-@media screen and (max-width: 554px) {
-    main article {
-        transition: 0s;
-        margin-top: 18rem;
-    }
-}
-@media screen and (max-width: 550px) {
-    main article {
-        transition: 0s;
-        margin-top: 18rem;
-    }
-}
-@media screen and (max-width: 531px) {
-    main article {
-        transition: 0s;
-        margin-top: 18rem;
-    }
-}
-@media screen and (max-width: 530px) {
-    main article {
-        transition: 0s;
-        margin-top: 21rem;
-    }
-}
-@media screen and (max-width: 478px) {
-    main article {
-        transition: 0s;
-        margin-top: 21rem;
-    }
-}
-@media screen and (max-width: 415px) {
-    header.header-container {
-        width: auto;
-    }
-    main {
-        width: 85%;
-    }
-} 
-@media screen and (max-width: 283px) {
-    main article {
-        transition: 0s;
-        margin-top: 24rem;
-    }
-}
+} */
 /* FIM @media sreen para position of the main */
 main h1 {
     background-color: var(--cor5);
@@ -318,6 +261,7 @@ main img.pequena {
 
 /* ASIDE */
 aside {
+    width: 100vw;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -366,6 +310,7 @@ aside ul::marker {
 
 /* FOOTER */
 footer {
+    width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
