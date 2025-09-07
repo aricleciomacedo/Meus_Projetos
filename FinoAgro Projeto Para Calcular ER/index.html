@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="Ariclecio Macedo">
+    <meta name="description" content="Este é exemplo de Calculadora de produção.">
+
+    <title>Calculadora de ER</title>
+    <link rel="shortcut icon" href="./icons/LetraAicon.ico" type="image/x-icon">
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="style-mobile.css">
+    <link rel="stylesheet" media="(min-width: 728px)" href="style.css">
+    
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/4662ecff30.js" crossorigin="anonymous"></script>
+
+    <script src="./script/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="./Imagens/Logo_Finoagro.png" alt="Imagem Logo" sizes="(max-width: 800px) 100vw, 800px">
+        </div>
+    </header>
+    <main>
+        <section class="container">
+            <h1>Calculadora de <span class="span_color4">ER</span> 
+                <span class="span_color1">Fino</span><span class="span_color2">Agro</span>
+            </h1>
+            <p class="container_copyright">
+                Este projeto têm em vista apenas calcular o valor da produção do colaborador, e sua interface semelhante ao da FinoAgro não tem outro fins que não seja exemplificativo.
+                Todos os direitos de imagens e outros detalhes estão reservados à <a href="https://finoagro.com.br/" target="_blank" rel="noopener noreferrer">&copy;FinoAgro</a>.
+            </p>
+            <div class="container_ajuste">
+                <div>
+                    <p>Digite o número de plantas por hora:</p>
+                    <input type="number" name="plantas-por-hora" id="plantas-por-hora" required>
+                    <p>Digite as horas trabalhadas:</p>
+                    <input type="number" name="horas-trabalhadas" id="horas-trabalhadas" required> 
+                    <div class="container-resultado">
+                        <p><span>Sua meta do dia é:</span></p>
+                        <p class="plantas-por-dia">
+                            Total de plantas/dia...
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <p>Diária base:</p>
+                    <input type="number" name="diaria" id="diaria" placeholder="Digite o valor da Diária:" value="51.06">
+                    <!-- <p>Meta do dia:</p>
+                    <input type="number" name="meta-do-dia" id="meta-do-dia" placeholder="Digite a Meta do Dia:"> -->
+                    <div class="container-resultado">
+                        <p><span>Valor da planta é:</span></p>
+                        <div class="valor-planta-por-hora">
+                            Resultado...
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" onclick="calcular()">CALCULAR</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section class="section_login">
+            <p>
+                Cadastre-se em nossa newsletter e receba informações sobre a <span class="span_color3">Finoagro</span>
+            </p>
+            <input type="email" name="input_email" id="input_email" size="10" placeholder="Digite seu email" required>
+            <button type="submit">Cadastrar</button>
+        </section>
+        <section class="section_saiba-mais">
+            <div class="section_saiba-mais-img">
+                <img src="./Imagens/Logo_Finoagro_w.png" alt="Imagem Logo_Finoagro_w">
+            </div>
+            <div class="div_institucional">
+                <h2>INSTITUCIONAL</h2>
+                <nav>
+                    <ul>
+                        <li><a href="#">Sobre nós</a></li>
+                        <li><a href="#">Sustentabilidade</a></li>
+                        <li><a href="#">Notícias</a></li>
+                        <li><a href="#">Relatório De Transparência Salarial</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="div_agricultura">
+                <h2>AGRICULTURA</h2>
+                <nav>
+                    <ul>
+                        <li><a href="#">Tipos de Mangas</a></li>
+                        <li><a href="#">Tipos de Uvas</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="div_fale-conosco">
+                <h2>FALE CONOSCO</h2>
+                <nav>
+                    <ul>
+                        <li><a href="#">Contato</a></li>
+                        <li><a href="#">Trabalhe Conosco</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="section-redes-sociais">
+                <div>
+                    <a href="#" target="_self" rel="noopener noreferrer">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                </div>
+                <div>
+                    <a href="#" target="_self" rel="noopener noreferrer">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                </div>
+                <div>
+                    <a href="#" target="_self" rel="noopener noreferrer">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                </div>
+                <div>
+                    <a href="#" target="_self" rel="noopener noreferrer">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="section_copyrigth">
+            <p>
+                &copy; <time datetime="2025-09-07">7 de Setembro de 2025</time> Ariclecio Macêdo. All rights reserved. 
+            </p>
+            <p>
+                Desenvolvimento: Ariclecio Macêdo
+            </p>
+            <div class="section_copyrigth-icons">
+                <div>
+                    <a href="#" target="_self" rel="noopener noreferrer">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                </div>
+                <div>
+                    <a href="#" target="_self" rel="noopener noreferrer">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                </div>
+                <div>
+                    <a href="#" target="_self" rel="noopener noreferrer">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                </div>
+                <div>
+                    <a href="#" target="_self" rel="noopener noreferrer">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </footer>
+</body>
+</html>

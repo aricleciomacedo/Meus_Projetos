@@ -1,0 +1,22 @@
+/* @media (max-width: 728px) {
+    elements {
+        propriedades: valores;
+    }
+} */
+footer .section_login{
+    align-items: center;
+    justify-content: center;
+}
+footer .section_login input#input_email {
+    width: 400px;
+    align-content: flex-start;
+}
+footer .section_login button {
+    width: 400px;
+}
+footer .section_saiba-mais-img {
+    margin: 0 auto;
+}
+footer .section_saiba-mais-img img{
+    width: 100%;
+}
