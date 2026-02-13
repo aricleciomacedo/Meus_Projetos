@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Not Found</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        section.container {
+            width: 100vw;
+            height: 100vh;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+        }
+        section.container div {
+            /* position: absolute;
+            top: 50%; */
+            display: flex;
+            flex-flow: column wrap;
+            align-items: center;
+            justify-content: center; 
+            gap: 20px;
+            font-size: 2rem;
+        }
+        section.container div p{
+            color: red;
+        }
+        section.container div a {
+            padding: 10px;
+            font-size: 1.2rem;
+        }
+        section.container div a:hover{
+            font-size: 1.3rem;
+            color: rgb(220, 0, 0);
+        }
+    </style>
+</head>
+<body>
+    <section class="container">
+        <div>
+            <p>Not Found Page!</p>
+            <button><a href="index.html">Voltar</a></button>
+        </div>
+    </section>
+</body>
+</html>

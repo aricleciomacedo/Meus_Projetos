@@ -1,0 +1,1233 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <title>Croqui de Áreas FinoAgro</title>
+
+  <meta name="author" content="Ariclecio Macedo"> <!-- Autor da página -->
+  <meta name="description" content="Mapa de plantas em Áreas com Setores"> <!-- Descrição do conteúdo -->
+  
+  <link rel="shortcut icon" href="../icons/LetraAicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../style.css" type="text/css" media="all" />
+  <link rel="stylesheet" href="../style-table.css" type="text/css" media="all" />
+
+  <!-- Instalação da biblioteca "sweetalert2" que estiliza o prompt|alert -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <!-- Fontawesome -->
+  <script src="https://kit.fontawesome.com/4662ecff30.js" crossorigin="anonymous"></script>
+
+  <script src="../src/scripts.js" type="text/javascript" charset="utf-8" defer></script>
+  <script src="../src/scripts-croqui.js" defer></script>
+</head>
+<body>
+
+  <!-- Atualizado Sábado na noite 03 de Janeiro de 2026-->
+
+  <!-- HEADER -->
+  <header>
+    <div class="logo_flags-languages">
+      <div class="logo">
+        <a href="#section_saiba-mais">
+          <img fetchpriority="high" width="800" height="378" src="../Imagens/Logo_Finoagro.png" alt="Imagem Logo FinoAgro" srcset="../imagens/Logo_Finoagro-946w.png 946w, ../imagens/Logo_Finoagro-300w.png 300w, ../imagens/Logo_Finoagro-768w.png 768w" sizes="(max-width: 800px) 100vw, 800px">
+        </a>
+      </div>
+      <div id="flags-languages" class="flag-size">
+        <div>
+          <a href="#">
+            <img src="../Imagens/flagUSA.png" alt="Flag USA" title="English" class="english">
+          </a>
+        </div>
+        <div>
+          <a href="#" title="Portuguese" class="brazil">
+            <img src="../Imagens/flagBrasil.png" alt="Flag Brazil">
+          </a>
+        </div>
+        <div>
+          <a href="#">
+            <img src="../Imagens/flagSpain.png" alt="Flag Spain" title="Spanish" class="spanish">
+          </a>
+        </div>
+      </div>
+    </div>
+    <div>
+      <p class="p_copyright">
+            Este projeto têm em vista apenas mostrar as áreas e setores na Fazenda Ubarana, e sua interface semelhante ao da FinoAgro não tem outro fins que não seja ilustrativo.
+            Todos os direitos de imagens e outros detalhes estão reservados à <a href="https://finoagro.com.br/" target="_blank" rel="noopener noreferrer">&copy;FinoAgro</a>.
+        </p>
+    </div>
+  </header><!-- FIM HEADER -->
+
+  <main>
+    <section class="titulo"><!-- Título -->
+      <h1>
+          <span class="span_color4">Croqui</span> 
+          <span class="span_color2">de</span> 
+          <span class="span_color1">Áreas</span> 
+          <span class="span_color2">e</span> 
+          <span class="span_color3">Setores</span>
+      </h1>
+      <p>
+          <!-- ❷ -->	&#10103; Esta é a área <span>M2</span> setor <span>S2</span>
+          depois do dreno após o rio Pataxó.
+      </p>
+    </section><!-- FIM titulo -->
+
+    <!-- Sessão de Observações (Conteúdo à parte)-->
+    <aside class="table-container1-obs">
+        <div class="table-container1-obs-info">
+          <div class="table-container1-obs-info-siglas">
+            <h2>Observação quanto as siglas na tabela:</h2>
+            <div id="div-info-siglas">
+              <div>
+                <p>
+                  <b>T</b> = Planta Travada; 
+                </p><wbr>
+                <p>
+                  <b>F</b> = Planta Falha(sem planta); 
+                </p><wbr>
+                <p>
+                  <b>R</b> = Planta Replantada; 
+                </p><wbr>
+              </div>
+              <div>
+                <p>
+                  <b>V1</b> = Variedade Principal; 
+                </p><wbr>
+                <p>
+                  <b>V2</b> = Variedade dois; 
+                </p><wbr>
+                <p>
+                  <b>V3</b> = Variedade três.
+                </p><wbr>
+              </div>
+            </div>
+          </div>
+          
+          <div class="table-container1-obs-info-div">
+            <div>
+              <h3>Espaçamento:</h3>
+              <br>
+              <p>
+                <span><b>8</b>&nbsp;X&nbsp;<b>4</b>&nbsp;=&nbsp;<b>32</b>&nbsp;m<sup>2</sup>/plantas(plt)</span>
+              </p>
+            </div>
+            <div>
+              <h3>Área Total:</h3>
+              <br>
+              <p><b>1,45</b>&nbsp;hectares(ha)</p>
+            </div>
+            <div>
+              <h3>Data do inventário:</h3>
+              <br>
+              <p>
+                <time datetime="2024-07-03">2024-07-03</time>
+              </p>
+            </div>
+            <div>
+              <h3>Variedades:</h3>
+              <p>
+                <span>
+                  <b>V</b>ariedade&nbsp;<b>1</b>&nbsp;=&nbsp;<strong>Tommy&nbsp;</strong><wbr>
+                </span>
+                <span>
+                  <b>V</b>ariedade&nbsp;<b>2</b>&nbsp;=&nbsp;#&nbsp;<wbr>
+                </span>
+                <span>
+                  <b>V</b>ariedade&nbsp;<b>3</b>&nbsp;=&nbsp;#&nbsp;<wbr>
+                </span>
+              </p>
+            </div>
+          </div>
+        </div>
+    </aside>
+
+    <div id="table-container1-title">
+      <h2>
+          M2 S2b Filas e Plantas
+      </h2>
+    </div>
+
+    <!-- Tabela 1 com Croqui de Áreas e Setores -->
+    <section class="table-container1">
+      <!-- Tabela M2 S2 -->
+      <table id="table-filas-plantas">
+        <tbody>
+          <tr class="row-plantas-filas">
+            <th class="cell-A1" scope="colgroup" scope="rowgroup">
+              Filas / <span id="cell-A1-span1">&rarr;</span>
+              <span id="cell-A1-span2">&darr;</span> Plantas
+            </th> 
+            <th scope="colgroup">01</th> <!-- fila 01 -->
+            <th scope="colgroup">02</th> <!-- fila 02 -->
+            <th scope="colgroup">03</th> <!-- fila 03 -->
+            <th scope="colgroup">04</th> <!-- fila 04 -->
+            <th scope="colgroup">05</th> <!-- fila 05 -->
+            <th scope="colgroup">06</th> <!-- fila 06 -->
+            <th scope="colgroup">07</th> <!-- fila 07 -->
+            <th scope="colgroup">08</th> <!-- fila 08 -->
+            <th scope="colgroup">09</th> <!-- fila 09 -->
+            <th scope="colgroup">10</th> <!-- fila 10 -->
+            <th scope="colgroup">11</th> <!-- fila 11 -->
+            <th scope="colgroup">12</th> <!-- fila 12 -->
+            <th scope="colgroup">13</th> <!-- fila 13 -->
+            <th scope="colgroup">14</th> <!-- fila 14 -->
+            <th scope="colgroup">15</th> <!-- fila 15 -->
+            <th scope="colgroup">16</th> <!-- fila 16 -->
+            <th scope="colgroup">17</th> <!-- fila 17 -->
+            <th scope="colgroup">18</th> <!-- fila 18 -->
+            <th scope="colgroup">19</th> <!-- fila 19 -->
+            <th scope="colgroup">20</th> <!-- fila 20 -->
+          </tr>
+          <tr><!-- row 1 -->
+            <th class="row" scope="rowgroup">01</th>
+            <td class="planta planta-B">B</td> <!-- planta 01 fila 01 -->
+            <td class="planta planta-B">B</td> <!-- planta 01 fila 02 -->
+            <td class="planta planta-B">B</td> <!-- planta 01 fila 03 -->
+            <td class="planta planta-B">B</td> <!-- planta 01 fila 04 -->
+            <td class="planta planta-B">B</td> <!-- planta 01 fila 05 -->
+            <td class="planta-B">B</td> <!-- planta 01 fila 06 -->
+            <td class="planta-B">B</td> <!-- planta 01 fila 07 -->
+            <td class="planta-B">B</td> <!-- planta 01 fila 08 -->
+            <td class="planta-B">B</td> <!-- planta 01 fila 09 -->
+            <td class="planta-B">B</td> <!-- planta 01 fila 10 -->
+            <td class="planta-B">B</td> <!-- planta 01 fila 11 -->
+            <td class="planta-B">B</td> <!-- planta 01 fila 12 -->
+            <td class="planta-B">B</td> <!-- planta 01 fila 13 -->
+            <td class="planta-B">B</td> <!-- planta 01 fila 14 -->
+            <td class="planta-B">B</td> <!-- planta 01 fila 15 -->
+            <td class="planta-B">B</td> <!-- planta 01 fila 16 -->
+            <td class="planta-B">B</td> <!-- planta 01 fila 17 -->
+            <td class="planta-B">B</td> <!-- planta 01 fila 18 -->
+            <td class="planta-B">B</td> <!-- planta 01 fila 19 -->
+            <td class="planta-B">B</td> <!-- planta 01 fila 20 -->
+          </tr>
+          <tr><!-- row 2 -->
+            <th class="row" scope="rowgroup">02</th>
+            <td class="planta-B">B</td> <!-- planta 02 fila 01 -->
+            <td class="planta-B">B</td> <!-- planta 02 fila 02 -->
+            <td class="planta-B">B</td> <!-- planta 02 fila 03 -->
+            <td class="planta-B">B</td> <!-- planta 02 fila 04 -->
+            <td class="planta-B">B</td> <!-- planta 02 fila 05 -->
+            <td class="planta-B">B</td> <!-- planta 03 fila 06 -->
+            <td class="planta-B">B</td><!-- planta 02 fila 07 -->
+            <td class="planta-B">B</td><!-- planta 02 fila 08 -->
+            <td class="planta-B">B</td><!-- planta 02 fila 09 -->
+            <td class="planta-B">B</td><!-- planta 02 fila 10 -->
+            <td class="planta-B">B</td><!-- planta 02 fila 11 -->
+            <td class="planta-B">B</td><!-- Planta 02 Fila 12  -->
+            <td class="planta-B">B</td><!-- planta 02 fila 13 -->
+            <td class="planta-B">B</td><!-- planta 02 fila 14 -->
+            <td class="planta-B">B</td><!-- Planta 02 Fila 15  -->
+            <td class="planta-B">B</td><!-- Planta 02 Fila 16  -->
+            <td class="planta-B">B</td><!-- Planta 02 Fila 17  -->
+            <td class="planta-B">B</td><!-- planta 02 fila 18 -->
+            <td class="planta-B">B</td><!-- Planta 02 Fila 19  -->
+            <td class="planta-B">B</td><!-- planta 02 fila 20 -->
+          </tr>
+          <tr><!-- row 3 -->
+            <th class="row" scope="rowgroup">03</th>
+            <td class="planta-B">B</td><!-- Planta 03 Fila 01 -->
+            <td class="planta-B">B</td><!-- Planta 03 Fila 02 -->
+            <td class="planta-B">B</td><!-- Planta 03 Fila 03 -->
+            <td class="planta-B">B</td><!-- Planta 03 Fila 04 -->
+            <td class="planta-B">B</td> <!-- planta 03 fila 05 -->
+            <td class="planta-B">B</td> <!-- planta 03 fila 06 -->
+            <td class="planta-B">B</td> <!-- planta 03 fila 07 -->
+            <td class="planta-B">B</td> <!-- planta 03 fila 08 -->
+            <td class="planta-B">B</td> <!-- planta 03 fila 09 -->
+            <td class="planta-B">B</td> <!-- planta 03 fila 10 -->
+            <td class="planta-B">B</td> <!-- planta 03 fila 11 -->
+            <td class="planta-B">B</td> <!-- planta 03 fila 12 -->
+            <td class="planta-B">B</td> <!-- planta 03 fila 13 -->
+            <td class="planta-B">B</td> <!-- planta 03 fila 14 -->
+            <td class="planta-B">B</td> <!-- planta 03 fila 15 -->
+            <td class="planta-B">B</td> <!-- planta 03 fila 16 -->
+            <td class="planta-B">B</td> <!-- planta 03 fila 17 -->
+            <td class="planta-B">B</td> <!-- planta 03 fila 18 -->
+            <td class="planta-B">B</td> <!-- planta 03 fila 19 -->
+            <td class="planta-B">B</td> <!-- planta 03 fila 20 -->
+          </tr>
+          <tr><!-- row 4 -->
+            <th class="row" scope="rowgroup">04</th>
+            <td class="planta-B">B</td><!-- Planta 04 Fila 01 -->
+            <td class="planta-B">B</td><!-- Planta 04 Fila 02 -->
+            <td class="planta-B">B</td><!-- Planta 04 Fila 03 -->
+            <td class="planta-F">F</td><!-- Planta 04 Fila 04 -->
+            <td class="planta-B">B</td><!-- Planta 04 Fila 05 -->
+            <td class="planta-B">B</td><!-- Planta 04 Fila 06 -->
+            <td class="planta-B">B</td><!-- Planta 04 Fila 07 -->
+            <td class="planta-B">B</td><!-- Planta 04 Fila 08 -->
+            <td class="planta-B">B</td><!-- Planta 04 Fila 09 -->
+            <td class="planta-B">B</td><!-- Planta 04 Fila 10 -->
+            <td class="planta-B">B</td><!-- Planta 04 Fila 11 -->
+            <td class="planta-B">B</td><!-- Planta 04 Fila 12 -->
+            <td class="planta-B">B</td><!-- Planta 04 Fila 13 -->
+            <td class="planta-B">B</td><!-- Planta 04 Fila 14 -->
+            <td class="planta-B">B</td><!-- Planta 04 Fila 15 -->
+            <td class="planta-B">B</td><!-- Planta 04 Fila 16 -->
+            <td class="planta-B">B</td><!-- Planta 04 Fila 17 -->
+            <td class="planta-B">B</td><!-- Planta 04 Fila 18 -->
+            <td class="planta-B">B</td><!-- Planta 04 Fila 19 -->
+            <td class="planta-B">B</td><!-- Planta 04 Fila 20 -->
+          </tr>
+          <tr><!-- row 5 -->
+            <th class="row" scope="rowgroup">05</th>
+            <td class="planta-B">B</td><!-- Planta 05 Fila 01 -->
+            <td class="planta-B">B</td><!-- Planta 05 Fila 02 -->
+            <td class="planta-B">B</td><!-- Planta 05 Fila 03 -->
+            <td class="planta-B">B</td><!-- Planta 05 Fila 04 -->
+            <td class="planta-B">B</td><!-- Planta 05 Fila 05 -->
+            <td class="planta-B">B</td><!-- Planta 05 Fila 06 -->
+            <td class="planta-B">B</td><!-- Planta 05 Fila 07 -->
+            <td class="planta-B">B</td><!-- Planta 05 Fila 08 -->
+            <td class="planta-B">B</td><!-- Planta 05 Fila 09 -->
+            <td class="planta-B">B</td><!-- Planta 05 Fila 10 -->
+            <td class="planta-B">B</td><!-- Planta 05 Fila 11 -->
+            <td class="planta-B">B</td><!-- Planta 05 Fila 12 -->
+            <td class="planta-B">B</td><!-- Planta 05 Fila 13 -->
+            <td class="planta-B">B</td><!-- Planta 05 Fila 14 -->
+            <td class="planta-B">B</td><!-- Planta 05 Fila 15 -->
+            <td class="planta-B">B</td><!-- Planta 05 Fila 16 -->
+            <td class="planta-B">B</td><!-- Planta 05 Fila 17 -->
+            <td class="planta-B">B</td><!-- Planta 05 Fila 18 -->
+            <td class="planta-B">B</td><!-- Planta 05 Fila 19 -->
+            <td class="planta-B">B</td><!-- Planta 05 Fila 20 -->
+          </tr>
+          <tr><!-- row 6 -->
+            <th class="row" scope="rowgroup">06</th>
+            <td class="planta-B">B</td><!-- Planta 06 Fila 01 -->
+            <td class="planta-B">B</td><!-- Planta 06 Fila 02 -->
+            <td class="planta-B">B</td><!-- Planta 06 Fila 03 -->
+            <td class="planta-B">B</td><!-- Planta 06 Fila 04 -->
+            <td class="planta-B">B</td><!-- Planta 06 Fila 05 -->
+            <td class="planta-B">B</td><!-- Planta 06 Fila 06 -->
+            <td class="planta-B">B</td><!-- Planta 06 Fila 07 -->
+            <td class="planta-B">B</td><!-- Planta 06 Fila 08 -->
+            <td class="planta-B">B</td><!-- Planta 06 Fila 09 -->
+            <td class="planta-B">B</td><!-- Planta 06 Fila 10 -->
+            <td class="planta-B">B</td><!-- Planta 06 Fila 11 -->
+            <td class="planta-B">B</td><!-- Planta 06 Fila 12 -->
+            <td class="planta-B">B</td><!-- Planta 06 Fila 13 -->
+            <td class="planta-B">B</td><!-- Planta 06 Fila 14 -->
+            <td class="planta-B">B</td><!-- Planta 06 Fila 15 -->
+            <td class="planta-B">B</td><!-- Planta 06 Fila 16 -->
+            <td class="planta-B">B</td><!-- Planta 06 Fila 17 -->
+            <td class="planta-B">B</td><!-- Planta 06 Fila 18 -->
+            <td class="planta-B">B</td><!-- Planta 06 Fila 19 -->
+            <td class="planta-None">&nbsp;</td><!-- Planta 06 Fila 20 -->
+          </tr>
+          <tr><!-- row 7 -->
+            <th class="row" scope="rowgroup">07</th>
+            <td class="planta-B">B</td><!-- Planta 07 Fila 01 -->
+            <td class="planta-B">B</td><!-- Planta 07 Fila 02 -->
+            <td class="planta-B">B</td><!-- Planta 07 Fila 03 -->
+            <td class="planta-B">B</td><!-- Planta 07 Fila 04 -->
+            <td class="planta-B">B</td><!-- Planta 07 Fila 05 -->
+            <td class="planta-B">B</td><!-- Planta 07 Fila 06 -->
+            <td class="planta-B">B</td><!-- Planta 07 Fila 07 -->
+            <td class="planta-B">B</td><!-- Planta 07 Fila 08 -->
+            <td class="planta-B">B</td><!-- Planta 07 Fila 09 -->
+            <td class="planta-B">B</td><!-- Planta 07 Fila 10 -->
+            <td class="planta-B">B</td><!-- Planta 07 Fila 11 -->
+            <td class="planta-B">B</td><!-- Planta 07 Fila 12 -->
+            <td class="planta-B">B</td><!-- Planta 07 Fila 13 -->
+            <td class="planta-B">B</td><!-- Planta 07 Fila 14 -->
+            <td class="planta-B">B</td><!-- Planta 07 Fila 15 -->
+            <td class="planta-B">B</td><!-- Planta 07 Fila 16 -->
+            <td class="planta-B">B</td><!-- Planta 07 Fila 17 -->
+            <td class="planta-B">B</td><!-- Planta 07 Fila 18 -->
+            <td class="planta-B">B</td><!-- Planta 07 Fila 19 -->
+            <td class="planta-None">&nbsp;</td><!-- Planta 07 Fila 20 -->
+          </tr>
+          <tr><!-- row 8 -->
+            <th class="row" scope="rowgroup">08</th>
+            <td class="planta-B">B</td><!-- Planta 08 Fila 01 -->
+            <td class="planta-B">B</td><!-- Planta 08 Fila 02 -->
+            <td class="planta-B">B</td><!-- Planta 08 Fila 03 -->
+            <td class="planta-B">B</td><!-- Planta 08 Fila 04 -->
+            <td class="planta-B">B</td><!-- Planta 08 Fila 05 -->
+            <td class="planta-B">B</td><!-- Planta 08 Fila 06 -->
+            <td class="planta-B">B</td><!-- Planta 08 Fila 07 -->
+            <td class="planta-B">B</td><!-- Planta 08 Fila 08 -->
+            <td class="planta-B">B</td><!-- Planta 08 Fila 09 -->
+            <td class="planta-B">B</td><!-- Planta 08 Fila 10 -->
+            <td class="planta-B">B</td><!-- Planta 08 Fila 11 -->
+            <td class="planta-B">B</td><!-- Planta 08 Fila 12 -->
+            <td class="planta-B">B</td><!-- Planta 08 Fila 13 -->
+            <td class="planta-B">B</td><!-- Planta 08 Fila 14 -->
+            <td class="planta-B">B</td><!-- Planta 08 Fila 15 -->
+            <td class="planta-F">F</td><!-- Planta 08 Fila 16 -->
+            <td class="planta-B">B</td><!-- Planta 08 Fila 17 -->
+            <td class="planta-B">B</td><!-- Planta 08 Fila 18 -->
+            <td class="planta-None">&nbsp;</td><!-- Planta 08 Fila 19 -->
+            <td class="planta-None">&nbsp;</td><!-- Planta 08 Fila 20 -->
+          </tr>
+          <tr><!-- row 9 -->
+            <th class="row" scope="rowgroup">09</th>
+            <td class="planta-R">R</td><!-- Planta 09 Fila 01 -->
+            <td class="planta-B">B</td><!-- Planta 09 Fila 02 -->
+            <td class="planta-B">B</td><!-- Planta 09 Fila 03 -->
+            <td class="planta-B">B</td><!-- Planta 09 Fila 04 -->
+            <td class="planta-B">B</td><!-- Planta 09 Fila 05 -->
+            <td class="planta-B">B</td><!-- Planta 09 Fila 06 -->
+            <td class="planta-B">B</td><!-- Planta 09 Fila 07 -->
+            <td class="planta-B">B</td><!-- Planta 09 Fila 08 -->
+            <td class="planta-B">B</td><!-- Planta 09 Fila 09 -->
+            <td class="planta-B">B</td><!-- Planta 09 Fila 10 -->
+            <td class="planta-B">B</td><!-- Planta 09 Fila 11 -->
+            <td class="planta-B">B</td><!-- Planta 09 Fila 12 -->
+            <td class="planta-B">B</td><!-- Planta 09 Fila 13 -->
+            <td class="planta-B">B</td><!-- Planta 09 Fila 14 -->
+            <td class="planta-B">B</td><!-- Planta 09 Fila 15 -->
+            <td class="planta-B">B</td><!-- Planta 09 Fila 16 -->
+            <td class="planta-B">B</td><!-- Planta 09 Fila 17 -->
+            <td class="planta-B">B</td><!-- Planta 09 Fila 18 -->
+            <td class="planta-None">&nbsp;</td><!-- Planta 09 Fila 19 -->
+            <td class="planta-None">&nbsp;</td><!-- Planta 09 Fila 20 -->
+          </tr>
+          <tr><!-- row 10 -->
+            <th class="row" scope="rowgroup">10</th>
+            <td class="planta-B">B</td><!-- Planta 10 Fila 01 -->
+            <td class="planta-B">B</td><!-- Planta 10 Fila 02 -->
+            <td class="planta-B">B</td><!-- Planta 10 Fila 03 -->
+            <td class="planta-B">B</td><!-- Planta 10 Fila 04 -->
+            <td class="planta-B">B</td><!-- Planta 10 Fila 05 -->
+            <td class="planta-R">R</td><!-- Planta 10 Fila 06 -->
+            <td class="planta-B">B</td><!-- Planta 10 Fila 07 -->
+            <td class="planta-B">B</td><!-- Planta 10 Fila 08 -->
+            <td class="planta-B">B</td><!-- Planta 10 Fila 09 -->
+            <td class="planta-B">B</td><!-- Planta 10 Fila 10 -->
+            <td class="planta-B">B</td><!-- Planta 10 Fila 11 -->
+            <td class="planta-B">B</td><!-- Planta 10 Fila 12 -->
+            <td class="planta-B">B</td><!-- Planta 10 Fila 13 -->
+            <td class="planta-B">B</td><!-- Planta 10 Fila 14 -->
+            <td class="planta-B">B</td><!-- Planta 10 Fila 15 -->
+            <td class="planta-F">F</td><!-- Planta 10 Fila 16 -->
+            <td class="planta-B">B</td><!-- Planta 10 Fila 17 -->
+            <td class="planta-B">B</td><!-- Planta 10 Fila 18 -->
+            <td class="planta-None">&nbsp;</td><!-- Planta 10 Fila 19 -->
+            <td class="planta-None">&nbsp;</td><!-- Planta 10 Fila 20 -->
+          </tr>
+          <tr><!-- row 11 -->
+            <th class="row" scope="rowgroup">11</th>
+            <td class="planta-B">B</td><!-- Planta 11 Fila 01 -->
+            <td class="planta-B">B</td><!-- Planta 10 Fila 02 -->
+            <td class="planta-B">B</td><!-- Planta 11 Fila 03 -->
+            <td class="planta-B">B</td><!-- Planta 11 Fila 04 -->
+            <td class="planta-B">B</td><!-- Planta 11 Fila 05 -->
+            <td class="planta-F">F</td><!-- Planta 11 Fila 06 -->
+            <td class="planta-B">B</td><!-- Planta 11 Fila 07 -->
+            <td class="planta-B">B</td><!-- Planta 11 Fila 08 -->
+            <td class="planta-R">R</td><!-- Planta 11 Fila 09 -->
+            <td class="planta-B">B</td><!-- Planta 11 Fila 10 -->
+            <td class="planta-B">B</td><!-- Planta 11 Fila 11 -->
+            <td class="planta-B">B</td><!-- Planta 11 Fila 12 -->
+            <td class="planta-B">B</td><!-- Planta 11 Fila 13 -->
+            <td class="planta-B">B</td><!-- Planta 11 Fila 14 -->
+            <td class="planta-B">B</td><!-- Planta 11 Fila 15 -->
+            <td class="planta-B">B</td><!-- Planta 11 Fila 16 -->
+            <td class="planta-B">B</td><!-- Planta 11 Fila 17 -->
+            <td class="planta-B">B</td><!-- Planta 11 Fila 18 -->
+            <td class="planta-None">&nbsp;</td><!-- Planta 11 Fila 19 -->
+            <td class="planta-None">&nbsp;</td><!-- Planta 11 Fila 20 -->
+          </tr>
+          <tr><!-- row 12 -->
+            <th class="row" scope="rowgroup">12</th>
+            <td class="planta-B">B</td><!-- Planta 12 Fila 01 -->
+            <td class="planta-B">B</td><!-- Planta 12 Fila 02 -->
+            <td class="planta-B">B</td><!-- Planta 12 Fila 03 -->
+            <td class="planta-B">B</td><!-- Planta 12 Fila 04 -->
+            <td class="planta-B">B</td><!-- Planta 12 Fila 05 -->
+            <td class="planta-B">B</td><!-- Planta 12 Fila 06 -->
+            <td class="planta-B">B</td><!-- Planta 12 Fila 07 -->
+            <td class="planta-B">B</td><!-- Planta 12 Fila 08 -->
+            <td class="planta-B">B</td><!-- Planta 12 Fila 09 -->
+            <td class="planta-B">B</td><!-- Planta 12 Fila 10 -->
+            <td class="planta-B">B</td><!-- Planta 12 Fila 11 -->
+            <td class="planta-B">B</td><!-- Planta 12 Fila 12 -->
+            <td class="planta-B">B</td><!-- Planta 12 Fila 13 -->
+            <td class="planta-B">B</td><!-- Planta 12 Fila 14 -->
+            <td class="planta-B">B</td><!-- Planta 12 Fila 15 -->
+            <td class="planta-F">F</td><!-- Planta 12 Fila 16 -->
+            <td class="planta-B">B</td><!-- Planta 12 Fila 17 -->
+            <td class="planta-None">&nbsp;</td><!-- Planta 12 Fila 18 -->
+            <td class="planta-None">&nbsp;</td><!-- Planta 12 Fila 19 -->
+            <td class="planta-None">&nbsp;</td><!-- Planta 12 Fila 20 -->
+          </tr>
+          <tr><!-- row 13 -->
+            <th class="row" scope="rowgroup">13</th>
+            <td class="planta-B">B</td><!-- Planta 13 Fila 01 -->
+            <td class="planta-B">B</td><!-- Planta 13 Fila 02 -->
+            <td class="planta-B">B</td><!-- Planta 13 Fila 03 -->
+            <td class="planta-B">B</td><!-- Planta 13 Fila 04 -->
+            <td class="planta-B">B</td><!-- Planta 13 Fila 05 -->
+            <td class="planta-B">B</td><!-- Planta 13 Fila 06 -->
+            <td class="planta-B">B</td><!-- Planta 13 Fila 07 -->
+            <td class="planta-B">B</td><!-- Planta 13 Fila 08 -->
+            <td class="planta-B">B</td><!-- Planta 13 Fila 09 -->
+            <td class="planta-B">B</td><!-- Planta 13 Fila 10 -->
+            <td class="planta-B">B</td><!-- Planta 13 Fila 11 -->
+            <td class="planta-B">B</td><!-- Planta 13 Fila 12 -->
+            <td class="planta-B">B</td><!-- Planta 13 Fila 13 -->
+            <td class="planta-B">B</td><!-- Planta 13 Fila 14 -->
+            <td class="planta-B">B</td><!-- Planta 13 Fila 15 -->
+            <td class="planta-B">B</td><!-- Planta 13 Fila 16 -->
+            <td class="planta-B">B</td><!-- Planta 13 Fila 17 -->
+            <td class="planta-None">&nbsp;</td><!-- Planta 13 Fila 18 -->
+            <td class="planta-None">&nbsp;</td><!-- Planta 13 Fila 19 -->
+            <td class="planta-None">&nbsp;</td><!-- Planta 13 Fila 20 -->
+          </tr>
+          <tr><!--  row 14 -->
+            <th class="row" scope="rowgroup">14</th>
+            <td class="planta-B">B</td><!-- Planta 14 Fila 01 -->
+            <td class="planta-B">B</td><!-- Planta 14 Fila 02 -->
+            <td class="planta-B">B</td><!-- Planta 14 Fila 03 -->
+            <td class="planta-B">B</td><!-- Planta 14 Fila 04 -->
+            <td class="planta-B">B</td><!-- Planta 14 Fila 05 -->
+            <td class="planta-R">R</td><!-- Planta 14 Fila 06 -->
+            <td class="planta-B">B</td><!-- Planta 14 Fila 07 -->
+            <td class="planta-B">B</td><!-- Planta 14 Fila 08 -->
+            <td class="planta-B">B</td><!-- Planta 14 Fila 09 -->
+            <td class="planta-B">B</td><!-- Planta 14 Fila 10 -->
+            <td class="planta-B">B</td><!-- Planta 14 Fila 11 -->
+            <td class="planta-B">B</td><!-- Planta 14 Fila 12 -->
+            <td class="planta-B">B</td><!-- Planta 14 Fila 13 -->
+            <td class="planta-B">B</td><!-- Planta 14 Fila 14 -->
+            <td class="planta-B">B</td><!-- Planta 14 Fila 15 -->
+            <td class="planta-B">B</td><!-- Planta 14 Fila 16 -->
+            <td class="planta-B">B</td><!-- Planta 14 Fila 17 -->
+            <td class="planta-None">&nbsp;</td><!-- Planta 14 Fila 18 -->
+            <td class="planta-None">&nbsp;</td><!-- Planta 14 Fila 19 -->
+            <td class="planta-None">&nbsp;</td><!-- Planta 14 Fila 20 -->
+          </tr>
+          <tr><!--  row 15 -->
+            <th class="row" scope="rowgroup">15</th>
+            <td class="planta-B">B</td><!-- Planta 15 Fila 01 -->
+            <td class="planta-B">B</td><!-- Planta 15 Fila 02 -->
+            <td class="planta-B">B</td><!-- Planta 15 Fila 03 -->
+            <td class="planta-B">B</td><!-- Planta 15 Fila 04 -->
+            <td class="planta-B">B</td><!-- Planta 15 Fila 05 -->
+            <td class="planta-B">B</td><!-- Planta 15 Fila 06 -->
+            <td class="planta-B">B</td><!-- Planta 15 Fila 07 -->
+            <td class="planta-B">B</td><!-- Planta 15 Fila 08 -->
+            <td class="planta-B">B</td><!-- Planta 15 Fila 09 -->
+            <td class="planta-B">B</td><!-- Planta 15 Fila 10 -->
+            <td class="planta-B">B</td><!-- Planta 15 Fila 11 -->
+            <td class="planta-B">B</td><!-- Planta 15 Fila 12 -->
+            <td class="planta-B">B</td><!-- Planta 15 Fila 13 -->
+            <td class="planta-B">B</td><!-- Planta 15 Fila 14 -->
+            <td class="planta-B">B</td><!-- Planta 15 Fila 15 -->
+            <td class="planta-B">B</td><!-- Planta 15 Fila 16 -->
+            <td class="planta-B">B</td><!-- Planta 15 Fila 17 -->
+            <td class="planta-None">&nbsp;</td><!-- Planta 15 Fila 18 -->
+            <td class="planta-None">&nbsp;</td><!-- Planta 15 Fila 19 -->
+            <td class="planta-None">&nbsp;</td><!-- Planta 15 Fila 20 -->
+          </tr>
+          <tr><!-- row 16 -->
+            <th class="row" scope="rowgroup">16</th>
+            <td class="planta-B">B</td><!-- Planta 16 Fila 01 -->
+            <td class="planta-B">B</td><!-- Planta 16 Fila 02 -->
+            <td class="planta-B">B</td><!-- Planta 16 Fila 03 -->
+            <td class="planta-B">B</td><!-- Planta 16 Fila 04 -->
+            <td class="planta-B">B</td><!-- Planta 16 Fila 05 -->
+            <td class="planta-B">B</td><!-- Planta 16 Fila 06 -->
+            <td class="planta-B">B</td><!-- Planta 16 Fila 07 -->
+            <td class="planta-B">B</td><!-- Planta 16 Fila 08 -->
+            <td class="planta-B">B</td><!-- Planta 16 Fila 09 -->
+            <td class="planta-B">B</td><!-- Planta 16 Fila 10 -->
+            <td class="planta-B">B</td><!-- Planta 16 Fila 11 -->
+            <td class="planta-B">B</td><!-- Planta 16 Fila 12 -->
+            <td class="planta-B">B</td><!-- Planta 16 Fila 13 -->
+            <td class="planta-B">B</td><!-- Planta 16 Fila 14 -->
+            <td class="planta-B">B</td><!-- Planta 16 Fila 15 -->
+            <td class="planta-B">B</td><!-- Planta 16 Fila 16 -->
+            <td class="planta-None">&nbsp;</td><!-- Planta 16 Fila 17 -->
+            <td class="planta-None">&nbsp;</td><!-- Planta 16 Fila 18 -->
+            <td class="planta-None">&nbsp;</td><!-- Planta 16 Fila 19 -->
+            <td class="planta-None">&nbsp;</td><!-- Planta 16 Fila 20 -->
+          </tr>
+          <tr><!-- row 17 -->
+            <th class="row" scope="rowgroup">17</th>
+            <td class="planta-B">B</td><!-- Planta 17 Fila 01 -->
+            <td class="planta-B">B</td><!-- Planta 17 Fila 02 -->
+            <td class="planta-B">B</td><!-- Planta 17 Fila 03 -->
+            <td class="planta-B">B</td><!-- Planta 17 Fila 04 -->
+            <td class="planta-B">B</td><!-- Planta 17 Fila 05 -->
+            <td class="planta-B">B</td><!-- Planta 17 Fila 06 -->
+            <td class="planta-B">B</td><!-- Planta 17 Fila 07 -->
+            <td class="planta-B">B</td><!-- Planta 17 Fila 08 -->
+            <td class="planta-B">B</td><!-- Planta 17 Fila 09 -->
+            <td class="planta-B">B</td><!-- Planta 17 Fila 10 -->
+            <td class="planta-B">B</td><!-- Planta 17 Fila 11 -->
+            <td class="planta-B">B</td><!-- Planta 17 Fila 12 -->
+            <td class="planta-B">B</td><!-- Planta 17 Fila 13 -->
+            <td class="planta-B">B</td><!-- Planta 17 Fila 14 -->
+            <td class="planta-B">B</td><!-- Planta 17 Fila 15 -->
+            <td class="planta-None">&nbsp;</td><!-- Planta 17 Fila 16 -->
+            <td class="planta-None">&nbsp;</td><!-- Planta 17 Fila 17 -->
+            <td class="planta-None">&nbsp;</td><!-- Planta 17 Fila 18 -->
+            <td class="planta-None">&nbsp;</td><!-- Planta 17 Fila 19 -->
+            <td class="planta-None">&nbsp;</td><!-- Planta 17 Fila 20 -->
+          </tr>
+          <tr><!-- row 18 -->
+            <th class="row" scope="rowgroup">18</th>
+            <td class="planta-B">B</td><!-- Planta 18 Fila 01 -->
+            <td class="planta-B">B</td><!-- Planta 18 Fila 02 -->
+            <td class="planta-B">B</td><!-- Planta 18 Fila 03 -->
+            <td class="planta-B">B</td><!-- Planta 18 Fila 04 -->
+            <td class="planta-B">B</td><!-- Planta 18 Fila 05 -->
+            <td class="planta-B">B</td><!-- Planta 18 Fila 06 -->
+            <td class="planta-B">B</td><!-- Planta 18 Fila 07 -->
+            <td class="planta-B">B</td><!-- Planta 18 Fila 08 -->
+            <td class="planta-B">B</td><!-- Planta 18 Fila 09 -->
+            <td class="planta-B">B</td><!-- Planta 18 Fila 10 -->
+            <td class="planta-B">B</td><!-- Planta 18 Fila 11 -->
+            <td class="planta-B">B</td><!-- Planta 18 Fila 12 -->
+            <td class="planta-B">B</td><!-- Planta 18 Fila 13 -->
+            <td class="planta-B">B</td><!-- Planta 18 Fila 14 -->
+            <td class="planta-B">B</td><!-- Planta 18 Fila 15 -->
+            <td class="planta-None">&nbsp;</td><!-- Planta 18 Fila 16 -->
+            <td class="planta-None">&nbsp;</td><!-- Planta 18 Fila 17 -->
+            <td class="planta-None">&nbsp;</td><!-- Planta 18 Fila 18 -->
+            <td class="planta-None">&nbsp;</td><!-- Planta 18 Fila 19 -->
+            <td class="planta-None">&nbsp;</td><!-- Planta 18 Fila 20 -->
+          </tr>
+          <tr><!-- row 19 -->
+            <th class="row" scope="rowgroup">19</th>
+            <td class="planta-B">B</td><!-- Planta 19 Fila 01 -->
+            <td class="planta-B">B</td><!-- Planta 19 Fila 02 -->
+            <td class="planta-B">B</td><!-- Planta 19 Fila 03 -->
+            <td class="planta-B">B</td><!-- Planta 19 Fila 04 -->
+            <td class="planta-B">B</td><!-- Planta 19 Fila 05 -->
+            <td class="planta-B">B</td><!-- Planta 19 Fila 06 -->
+            <td class="planta-B">B</td><!-- Planta 19 Fila 07 -->
+            <td class="planta-B">B</td><!-- Planta 19 Fila 08 -->
+            <td class="planta-B">B</td><!-- Planta 19 Fila 09 -->
+            <td class="planta-B">B</td><!-- Planta 19 Fila 10 -->
+            <td class="planta-B">B</td><!-- Planta 19 Fila 11 -->
+            <td class="planta-B">B</td><!-- Planta 19 Fila 12 -->
+            <td class="planta-B">B</td><!-- Planta 19 Fila 13 -->
+            <td class="planta-B">B</td><!-- Planta 19 Fila 14 -->
+            <td class="planta-B">B</td><!-- Planta 19 Fila 15 -->
+            <td class="planta-None">&nbsp;</td><!-- Planta 19 Fila 16 -->
+            <td class="planta-None">&nbsp;</td><!-- Planta 19 Fila 17 -->
+            <td class="planta-None">&nbsp;</td><!-- Planta 19 Fila 18 -->
+            <td class="planta-None">&nbsp;</td><!-- Planta 19 Fila 19 -->
+            <td class="planta-None">&nbsp;</td><!-- Planta 19 Fila 20 -->
+          </tr>
+          <tr><!-- row 20 -->
+            <th class="row" scope="rowgroup">20</th>
+            <td class="planta-B">B</td><!-- Planta 20 Fila 01 -->
+            <td class="planta-B">B</td><!-- Planta 20 Fila 02 -->
+            <td class="planta-B">B</td><!-- Planta 20 Fila 03 -->
+            <td class="planta-B">B</td><!-- Planta 20 Fila 04 -->
+            <td class="planta-B">B</td><!-- Planta 20 Fila 05 -->
+            <td class="planta-B">B</td><!-- Planta 20 Fila 06 -->
+            <td class="planta-B">B</td><!-- Planta 20 Fila 07 -->
+            <td class="planta-B">B</td><!-- Planta 20 Fila 08 -->
+            <td class="planta-B">B</td><!-- Planta 20 Fila 09 -->
+            <td class="planta-B">B</td><!-- Planta 20 Fila 10 -->
+            <td class="planta-B">B</td><!-- Planta 20 Fila 11 -->
+            <td class="planta-B">B</td><!-- Planta 20 Fila 12 -->
+            <td class="planta-B">B</td><!-- Planta 20 Fila 13 -->
+            <td class="planta-B">B</td><!-- Planta 20 Fila 14 -->
+            <td class="planta-None">&nbsp;</td><!-- Planta 20 Fila 15 -->
+            <td class="planta-None">&nbsp;</td><!-- Planta 20 Fila 16 -->
+            <td class="planta-None">&nbsp;</td><!-- Planta 20 Fila 17 -->
+            <td class="planta-None">&nbsp;</td><!-- Planta 20 Fila 18 -->
+            <td class="planta-None">&nbsp;</td><!-- Planta 20 Fila 19 -->
+            <td class="planta-None">&nbsp;</td><!-- Planta 20 Fila 20 -->
+          </tr>
+          <tr><!-- row 21 -->
+            <th class="row" scope="rowgroup">21</th>
+            <td class="planta-B">B</td><!-- Planta 21 Fila 01 -->
+            <td class="planta-B">B</td><!-- Planta 21 Fila 02 -->
+            <td class="planta-B">B</td><!-- Planta 21 Fila 03 -->
+            <td class="planta-B">B</td><!-- Planta 21 Fila 04 -->
+            <td class="planta-B">B</td><!-- Planta 21 Fila 05 -->
+            <td class="planta-B">B</td><!-- Planta 21 Fila 06 -->
+            <td class="planta-B">B</td><!-- Planta 21 Fila 07 -->
+            <td class="planta-B">B</td><!-- Planta 21 Fila 08 -->
+            <td class="planta-B">B</td><!-- Planta 21 Fila 09 -->
+            <td class="planta-B">B</td><!-- Planta 21 Fila 10 -->
+            <td class="planta-B">B</td><!-- Planta 21 Fila 11 -->
+            <td class="planta-B">B</td><!-- Planta 21 Fila 12 -->
+            <td class="planta-B">B</td><!-- Planta 21 Fila 13 -->
+            <td class="planta-B">B</td><!-- Planta 21 Fila 14 -->
+            <td class="planta-None">&nbsp;</td><!-- Planta 21 Fila 15 -->
+            <td class="planta-None">&nbsp;</td><!-- Planta 21 Fila 16 -->
+            <td class="planta-None">&nbsp;</td><!-- Planta 21 Fila 17 -->
+            <td class="planta-None">&nbsp;</td><!-- Planta 21 Fila 18 -->
+            <td class="planta-None">&nbsp;</td><!-- Planta 21 Fila 19 -->
+            <td class="planta-None">&nbsp;</td><!-- Planta 21 Fila 20 -->
+          </tr>
+          <tr><!-- row 22 -->
+            <th class="row" scope="rowgroup">22</th>
+            <td class="planta-B">B</td><!-- Planta 22 Fila 01 -->
+            <td class="planta-B">B</td><!-- Planta 22 Fila 02 -->
+            <td class="planta-B">B</td><!-- Planta 22 Fila 03 -->
+            <td class="planta-B">B</td><!-- Planta 22 Fila 04 -->
+            <td class="planta-B">B</td><!-- Planta 22 Fila 05 -->
+            <td class="planta-B">B</td><!-- Planta 22 Fila 06 -->
+            <td class="planta-B">B</td><!-- Planta 22 Fila 07 -->
+            <td class="planta-B">B</td><!-- Planta 22 Fila 08 -->
+            <td class="planta-B">B</td><!-- Planta 22 Fila 09 -->
+            <td class="planta-B">B</td><!-- Planta 22 Fila 10 -->
+            <td class="planta-B">B</td><!-- Planta 22 Fila 11 -->
+            <td class="planta-B">B</td><!-- Planta 22 Fila 12 -->
+            <td class="planta-B">B</td><!-- Planta 22 Fila 13 -->
+            <td class="planta-None">&nbsp;</td><!-- Planta 22 Fila 14 -->
+            <td class="planta-None">&nbsp;</td><!-- Planta 22 Fila 15 -->
+            <td class="planta-None">&nbsp;</td><!-- Planta 22 Fila 16 -->
+            <td class="planta-None">&nbsp;</td><!-- Planta 22 Fila 17 -->
+            <td class="planta-None">&nbsp;</td><!-- Planta 22 Fila 18 -->
+            <td class="planta-None">&nbsp;</td><!-- Planta 22 Fila 19 -->
+            <td class="planta-None">&nbsp;</td><!-- Planta 22 Fila 20 -->
+          </tr>
+          <tr><!-- row 23 -->
+            <th class="row" scope="rowgroup">23</th>
+            <td class="planta-B">B</td><!-- Planta 23 Fila 01 -->
+            <td class="planta-B">B</td><!-- Planta 23 Fila 02 -->
+            <td class="planta-B">B</td><!-- Planta 23 Fila 03 -->
+            <td class="planta-B">B</td><!-- Planta 23 Fila 04 -->
+            <td class="planta-B">B</td><!-- Planta 23 Fila 05 -->
+            <td class="planta-B">B</td><!-- Planta 23 Fila 06 -->
+            <td class="planta-B">B</td><!-- Planta 23 Fila 07 -->
+            <td class="planta-B">B</td><!-- Planta 23 Fila 08 -->
+            <td class="planta-B">B</td><!-- Planta 23 Fila 09 -->
+            <td class="planta-B">B</td><!-- Planta 23 Fila 10 -->
+            <td class="planta-B">B</td><!-- Planta 23 Fila 11 -->
+            <td class="planta-B">B</td><!-- Planta 23 Fila 12 -->
+            <td class="planta-B">B</td><!-- Planta 23 Fila 13 -->
+            <td class="planta-None">&nbsp;</td><!-- Planta 23 Fila 14 -->
+            <td class="planta-None">&nbsp;</td><!-- Planta 23 Fila 15 -->
+            <td class="planta-None">&nbsp;</td><!-- Planta 23 Fila 16 -->
+            <td class="planta-None">&nbsp;</td><!-- Planta 23 Fila 17 -->
+            <td class="planta-None">&nbsp;</td><!-- Planta 23 Fila 18 -->
+            <td class="planta-None">&nbsp;</td><!-- Planta 23 Fila 19 -->
+            <td class="planta-None">&nbsp;</td><!-- Planta 23 Fila 20 -->
+          </tr>
+          <tr><!-- row 24 -->
+            <th class="row" scope="rowgroup">24</th>
+            <td class="planta-B">B</td><!-- Planta 24 Fila 01 -->
+            <td class="planta-B">B</td><!-- Planta 24 Fila 02 -->
+            <td class="planta-B">B</td><!-- Planta 24 Fila 03 -->
+            <td class="planta-B">B</td><!-- Planta 24 Fila 04 -->
+            <td class="planta-B">B</td><!-- Planta 24 Fila 05 -->
+            <td class="planta-B">B</td><!-- Planta 24 Fila 06 -->
+            <td class="planta-B">B</td><!-- Planta 24 Fila 07 -->
+            <td class="planta-B">B</td><!-- Planta 24 Fila 08 -->
+            <td class="planta-B">B</td><!-- Planta 24 Fila 09 -->
+            <td class="planta-B">B</td><!-- Planta 24 Fila 10 -->
+            <td class="planta-B">B</td><!-- Planta 24 Fila 11 -->
+            <td class="planta-B">B</td><!-- Planta 24 Fila 12 -->
+            <td class="planta-None">&nbsp;</td><!-- Planta 24 Fila 13 -->
+            <td class="planta-None">&nbsp;</td><!-- Planta 24 Fila 14 -->
+            <td class="planta-None">&nbsp;</td><!-- Planta 24 Fila 15 -->
+            <td class="planta-None">&nbsp;</td><!-- Planta 24 Fila 16 -->
+            <td class="planta-None">&nbsp;</td><!-- Planta 24 Fila 17 -->
+            <td class="planta-None">&nbsp;</td><!-- Planta 24 Fila 18 -->
+            <td class="planta-None">&nbsp;</td><!-- Planta 24 Fila 19 -->
+            <td class="planta-None">&nbsp;</td><!-- Planta 24 Fila 20 -->
+          </tr>
+          <tr><!-- row 25 -->
+            <th class="row" scope="rowgroup">25</th>
+            <td class="planta-B">B</td><!-- Planta 26 Fila 01 -->
+            <td class="planta-B">B</td><!-- Planta 26 Fila 02 -->
+            <td class="planta-B">B</td><!-- Planta 26 Fila 03 -->
+            <td class="planta-B">B</td><!-- Planta 26 Fila 04 -->
+            <td class="planta-B">B</td><!-- Planta 26 Fila 05 -->
+            <td class="planta-B">B</td><!-- Planta 26 Fila 06 -->
+            <td class="planta-B">B</td><!-- Planta 26 Fila 07 -->
+            <td class="planta-B">B</td><!-- Planta 26 Fila 08 -->
+            <td class="planta-B">B</td><!-- Planta 26 Fila 09 -->
+            <td class="planta-B">B</td><!-- Planta 26 Fila 10 -->
+            <td class="planta-B">B</td><!-- Planta 26 Fila 11 -->
+            <td class="planta-B">B</td><!-- Planta 26 Fila 12 -->
+            <td class="planta-None">&nbsp;</td><!-- Planta 26 Fila 13 -->
+            <td class="planta-None">&nbsp;</td><!-- Planta 26 Fila 14 -->
+            <td class="planta-None">&nbsp;</td><!-- Planta 26 Fila 15 -->
+            <td class="planta-None">&nbsp;</td><!-- Planta 26 Fila 16 -->
+            <td class="planta-None">&nbsp;</td><!-- Planta 26 Fila 17 -->
+            <td class="planta-None">&nbsp;</td><!-- Planta 26 Fila 18 -->
+            <td class="planta-None">&nbsp;</td><!-- Planta 26 Fila 19 -->
+            <td class="planta-None">&nbsp;</td><!-- Planta 26 Fila 20 -->
+          </tr>
+          <tr><!-- row 26 -->
+            <th class="row" scope="rowgroup">26</th>
+            <td class="planta-B">B</td><!-- Planta 26 Fila 01 -->
+            <td class="planta-B">B</td><!-- Planta 26 Fila 02 -->
+            <td class="planta-B">B</td><!-- Planta 26 Fila 03 -->
+            <td class="planta-B">B</td><!-- Planta 26 Fila 04 -->
+            <td class="planta-B">B</td><!-- Planta 26 Fila 05 -->
+            <td class="planta-B">B</td><!-- Planta 26 Fila 06 -->
+            <td class="planta-B">B</td><!-- Planta 26 Fila 07 -->
+            <td class="planta-B">B</td><!-- Planta 26 Fila 08 -->
+            <td class="planta-B">B</td><!-- Planta 26 Fila 09 -->
+            <td class="planta-B">B</td><!-- Planta 26 Fila 10 -->
+            <td class="planta-B">B</td><!-- Planta 26 Fila 11 -->
+            <td class="planta-None">&nbsp;</td><!-- Planta 26 Fila 12 -->
+            <td class="planta-None">&nbsp;</td><!-- Planta 26 Fila 13 -->
+            <td class="planta-None">&nbsp;</td><!-- Planta 26 Fila 14 -->
+            <td class="planta-None">&nbsp;</td><!-- Planta 26 Fila 15 -->
+            <td class="planta-None">&nbsp;</td><!-- Planta 26 Fila 16 -->
+            <td class="planta-None">&nbsp;</td><!-- Planta 26 Fila 17 -->
+            <td class="planta-None">&nbsp;</td><!-- Planta 26 Fila 18 -->
+            <td class="planta-None">&nbsp;</td><!-- Planta 26 Fila 19 -->
+            <td class="planta-None">&nbsp;</td><!-- Planta 26 Fila 20 -->
+          </tr>
+          <tr><!-- row 27 -->
+            <th class="row" scope="rowgroup">27</th>
+            <td class="planta-B">B</td><!-- Planta 27 Fila 01 -->
+            <td class="planta-B">B</td><!-- Planta 27 Fila 02 -->
+            <td class="planta-B">B</td><!-- Planta 27 Fila 03 -->
+            <td class="planta-B">B</td><!-- Planta 27 Fila 04 -->
+            <td class="planta-B">B</td><!-- Planta 27 Fila 05 -->
+            <td class="planta-B">B</td><!-- Planta 27 Fila 06 -->
+            <td class="planta-B">B</td><!-- Planta 27 Fila 07 -->
+            <td class="planta-B">B</td><!-- Planta 27 Fila 08 -->
+            <td class="planta-B">B</td><!-- Planta 27 Fila 09 -->
+            <td class="planta-B">B</td><!-- Planta 27 Fila 10 -->
+            <td class="planta-B">B</td><!-- Planta 27 Fila 11 -->
+            <td class="planta-None">&nbsp;</td><!-- Planta 27 Fila 12 -->
+            <td class="planta-None">&nbsp;</td><!-- Planta 27 Fila 13 -->
+            <td class="planta-None">&nbsp;</td><!-- Planta 27 Fila 14 -->
+            <td class="planta-None">&nbsp;</td><!-- Planta 27 Fila 15 -->
+            <td class="planta-None">&nbsp;</td><!-- Planta 27 Fila 16 -->
+            <td class="planta-None">&nbsp;</td><!-- Planta 27 Fila 17 -->
+            <td class="planta-None">&nbsp;</td><!-- Planta 27 Fila 18 -->
+            <td class="planta-None">&nbsp;</td><!-- Planta 27 Fila 19 -->
+            <td class="planta-None">&nbsp;</td><!-- Planta 27 Fila 20 -->
+          </tr>
+          <tr><!-- row 28 -->
+            <th class="row" scope="rowgroup">28</th>
+            <td class="planta-B">B</td><!-- Planta 28 Fila 01 -->
+            <td class="planta-B">B</td><!-- Planta 28 Fila 02 -->
+            <td class="planta-B">B</td><!-- Planta 28 Fila 03 -->
+            <td class="planta-B">B</td><!-- Planta 28 Fila 04 -->
+            <td class="planta-B">B</td><!-- Planta 28 Fila 05 -->
+            <td class="planta-B">B</td><!-- Planta 28 Fila 06 -->
+            <td class="planta-B">B</td><!-- Planta 28 Fila 07 -->
+            <td class="planta-B">B</td><!-- Planta 28 Fila 08 -->
+            <td class="planta-B">B</td><!-- Planta 28 Fila 09 -->
+            <td class="planta-None">&nbsp;</td><!-- Planta 28 Fila 10 -->
+            <td class="planta-None">&nbsp;</td><!-- Planta 28 Fila 11 -->
+            <td class="planta-None">&nbsp;</td><!-- Planta 28 Fila 12 -->
+            <td class="planta-None">&nbsp;</td><!-- Planta 28 Fila 13 -->
+            <td class="planta-None">&nbsp;</td><!-- Planta 28 Fila 14 -->
+            <td class="planta-None">&nbsp;</td><!-- Planta 28 Fila 15 -->
+            <td class="planta-None">&nbsp;</td><!-- Planta 28 Fila 16 -->
+            <td class="planta-None">&nbsp;</td><!-- Planta 28 Fila 17 -->
+            <td class="planta-None">&nbsp;</td><!-- Planta 28 Fila 18 -->
+            <td class="planta-None">&nbsp;</td><!-- Planta 28 Fila 19 -->
+            <td class="planta-None">&nbsp;</td><!-- Planta 28 Fila 20 -->
+          </tr>
+          <tr><!-- row 29 -->
+            <th class="row" scope="rowgroup">29</th>
+            <td class="planta-B">B</td><!-- Planta 29 Fila 01 -->
+            <td class="planta-B">B</td><!-- Planta 29 Fila 02 -->
+            <td class="planta-B">B</td><!-- Planta 29 Fila 03 -->
+            <td class="planta-B">B</td><!-- Planta 29 Fila 04 -->
+            <td class="planta-B">B</td><!-- Planta 29 Fila 05 -->
+            <td class="planta-B">B</td><!-- Planta 29 Fila 06 -->
+            <td class="planta-B">B</td><!-- Planta 29 Fila 07 -->
+            <td class="planta-B">B</td><!-- Planta 29 Fila 08 -->
+            <td class="planta-B">B</td><!-- Planta 29 Fila 09 -->
+            <td class="planta-None">&nbsp;</td><!-- Planta 29 Fila 10 -->
+            <td class="planta-None">&nbsp;</td><!-- Planta 29 Fila 11 -->
+            <td class="planta-None">&nbsp;</td><!-- Planta 29 Fila 12 -->
+            <td class="planta-None">&nbsp;</td><!-- Planta 29 Fila 13 -->
+            <td class="planta-None">&nbsp;</td><!-- Planta 29 Fila 14 -->
+            <td class="planta-None">&nbsp;</td><!-- Planta 29 Fila 15 -->
+            <td class="planta-None">&nbsp;</td><!-- Planta 29 Fila 16 -->
+            <td class="planta-None">&nbsp;</td><!-- Planta 29 Fila 17 -->
+            <td class="planta-None">&nbsp;</td><!-- Planta 29 Fila 18 -->
+            <td class="planta-None">&nbsp;</td><!-- Planta 29 Fila 19 -->
+            <td class="planta-None">&nbsp;</td><!-- Planta 29 Fila 20 -->
+          </tr>
+          <tr><!-- row 30 -->
+            <th class="row" scope="rowgroup">30</th>
+            <td class="planta-None">&nbsp;</td><!-- Planta 30 Fila 01 -->
+            <td class="planta-None">&nbsp;</td><!-- Planta 30 Fila 02 -->
+            <td class="planta-None">&nbsp;</td><!-- Planta 30 Fila 03 -->
+            <td class="planta-None">&nbsp;</td><!-- Planta 30 Fila 04 -->
+            <td class="planta-None">&nbsp;</td><!-- Planta 30 Fila 05 -->
+            <td class="planta-None">&nbsp;</td><!-- Planta 30 Fila 06 -->
+            <td class="planta-None">&nbsp;</td><!-- Planta 30 Fila 07 -->
+            <td class="planta-None">&nbsp;</td><!-- Planta 30 Fila 08 -->
+            <td class="planta-None">&nbsp;</td><!-- Planta 30 Fila 09 -->
+            <td class="planta-None">&nbsp;</td><!-- Planta 30 Fila 10 -->
+            <td class="planta-None">&nbsp;</td><!-- Planta 30 Fila 11 -->
+            <td class="planta-None">&nbsp;</td><!-- Planta 30 Fila 12 -->
+            <td class="planta-None">&nbsp;</td><!-- Planta 30 Fila 13 -->
+            <td class="planta-None">&nbsp;</td><!-- Planta 30 Fila 14 -->
+            <td class="planta-None">&nbsp;</td><!-- Planta 30 Fila 15 -->
+            <td class="planta-None">&nbsp;</td><!-- Planta 30 Fila 16 -->
+            <td class="planta-None">&nbsp;</td><!-- Planta 30 Fila 17 -->
+            <td class="planta-None">&nbsp;</td><!-- Planta 30 Fila 18 -->
+            <td class="planta-None">&nbsp;</td><!-- Planta 30 Fila 19 -->
+            <td class="planta-None">&nbsp;</td><!-- Planta 30 Fila 20 -->
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- MENU de navegação  -->
+    <nav class="navigation-menu-nav">
+      <ul>
+        <li>
+          <a href="../index.html" title="Voltar ao Mapa de áreas e setores">&LeftArrow;&nbsp;MAPA&nbsp;&nbsp;</a>
+        </li>
+        <li>
+          <a href="indexM2S2a.html" target="_top" title="M2 S2 depois do rio Pataxó">M2&nbsp;Setor&nbsp;2a</a>
+        </li>
+        <li>
+          <a href="indexM2S2b.html" title="M2 S2 depois do dreno" class="navigation-menu-nav-li-a-active" id="a-active">M2&nbsp;Setor&nbsp;2b</a>
+        </li>
+        <li>
+          <a href="indexM2S1.html">M2&nbsp;Setor&nbsp;1</a>
+        </li>
+        <li>
+          <a href="indexM3S1.html">M3&nbsp;Setor&nbsp;1</a>
+        </li>
+        <li>
+          <a href="indexM3S2.html">M3&nbsp;Setor&nbsp;2</a>
+        </li>
+        <li>
+          <a href="indexM3S3.html">M3&nbsp;Setor&nbsp;3</a>
+        </li>
+        <li>
+          <a href="indexM3S4.html">M3&nbsp;Setor&nbsp;4</a>
+        </li>
+        <li>
+          <a href="indexM3S5.html">M3&nbsp;Setor&nbsp;5</a>
+        </li>
+        <li>
+          <a href="indexM3S6.html">M3&nbsp;Setor&nbsp;6</a>
+        </li>
+        <li>
+          <a href="indexM4S1.html">M4&nbsp;Setor&nbsp;1</a>
+        </li>
+        <li>
+          <a href="indexM4S2.html">M4&nbsp;Setor&nbsp;2</a>
+        </li>
+        <li>
+          <a href="indexM4S3.html">M4&nbsp;Setor&nbsp;3</a>
+        </li>
+        <li>
+          <a href="indexM4S4.html">M4&nbsp;Setor&nbsp;4</a>
+        </li>
+        <li>
+          <a href="indexM5S1.html">M5&nbsp;Setor&nbsp;1</a>
+        </li>
+        <li>
+          <a href="indexM5S2.html">M5&nbsp;Setor&nbsp;2</a>
+        </li>
+        <li>
+          <a href="indexM5S3.html">M5&nbsp;Setor&nbsp;3</a>
+        </li>
+        <li>
+          <a href="indexM6S1.html">M6&nbsp;Setor&nbsp;1</a>
+        </li>
+        <li>
+          <a href="indexM6S2.html">M6&nbsp;Setor&nbsp;2</a>
+        </li>
+        <li>
+          <a href="indexM6S3.html">M6&nbsp;Setor&nbsp;3</a>
+        </li>
+        <li>
+          <a href="indexM7S1.html">M7&nbsp;Setor&nbsp;1</a>
+        </li>
+        <li>
+          <a href="indexM7S2.html">M7&nbsp;Setor&nbsp;2</a>
+        </li>
+        <li>
+          <a href="indexM7S3.html">M7&nbsp;Setor&nbsp;3</a>
+        </li>
+        <li>
+          <a href="indexM7S4.html">M7&nbsp;Setor&nbsp;4</a>
+        </li>
+        <li>
+          <a href="indexM8S1.html">M8&nbsp;Setor&nbsp;1</a>
+        </li>
+        <li>
+          <a href="indexM8S2.html">M8&nbsp;Setor&nbsp;2</a>
+        </li>
+        <li>
+          <a href="indexM8S3.html">M8&nbsp;Setor&nbsp;3</a>
+        </li>
+        <li>
+          <a href="indexM8S4.html">M8&nbsp;Setor&nbsp;4</a>
+        </li>
+        <li>
+          <a href="indexM9S1.html">M9&nbsp;Setor&nbsp;1</a>
+        </li>
+        <li>
+          <a href="indexM9S2.html">M9&nbsp;Setor&nbsp;2</a>
+        </li>
+        <li>
+          <a href="indexM9S3.html">M9&nbsp;Setor&nbsp;3</a>
+        </li>
+        <li>
+          <a href="indexM9S4.html">M9&nbsp;Setor&nbsp;4</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Sessão de detalhes sobre o setor -->
+    <section class="container-detalhes">
+      <div class="container-detalhes-title">
+        <h2>Detalhes</h2>
+      </div>
+
+      <section class="container-detalhes-sec1">
+
+        <!-- Informação sobre pulverização -->
+        <section class="container-detalhes-pulverizacao">
+            
+            <section class="container-detalhes-sec1-flags">
+              <fieldset>
+                <legend>Situação do setor:</legend>
+                <p>
+                  <input type="radio" name="flag-selected" id="lime-flag-selected" value="flag-1" checked>
+                  <label for="lime-flag-selected">Setor livre para colaboradores</label><br>
+                </p>
+                <p>
+                  <input type="radio" name="flag-selected" id="orange-flag-selected" value="flag-2">
+                  <label for="orange-flag-selected">Setor restrito a gestante e idosos acima de 50anos<br></label>
+                </p>
+                <p>
+                  <input type="radio" name="flag-selected" id="red-flag-selected" value="flag-3">
+                  <label for="red-flag-selected">Setor pulverizado e restrito a todos</label>
+                </p>
+              </fieldset>
+            </section>
+            <section>
+              <div id="lime-flag" class="div-flag hidden" data-radio-id="lime-flag-selected">
+                  <!-- <i class="fa-solid fa-flag"></i> -->
+                  <!-- <span style="position: absolute; top: 30px; left: 4px; font-size: 2.4rem; font-weight: bolder;">&check;</span> -->
+                  <img src="../flag-solid-full-lime.svg" alt="Bandeira Verde">
+              </div>
+              <div id="orange-flag" class="div-flag" data-radio-id="orange-flag-selected">
+                  <!-- <i class="fa-solid fa-flag"></i> -->
+                  <img src="../flag-solid-full-orange.svg" alt="Bandeira-vermelha">
+              </div>
+              <div id="red-flag" class="div-flag" data-radio-id="red-flag-selected">
+                  <!-- <i class="fa-solid fa-flag"></i> -->
+                  <img src="../flag-solid-full-red.svg" alt="Bandeira-vermelha">
+              </div>
+            </section>
+        </section>
+
+        <!-- TABELA de Informações extras -->
+        <section>
+          <table>
+            <!-- Agrupamento de colunas -->
+             <colgroup>
+              <col class="v1">
+              <col class="v2">
+              <col class="v3">
+             </colgroup>
+            <thead>
+              <tr>
+                <th scope="col">Variedade Principal (V1)</th>
+                <th scope="col">Segunda Variedade (V2)</th>
+                <th scope="col">Terceira Variedade (V3)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>TOMMY</td>
+                <td>&nbsp;X&nbsp;</td>
+                <td>&nbsp;X&nbsp;</td>
+              </tr>
+              <tr>
+                <th colspan="2" scope="row">Espaçamento:</th>
+                <td colspan="2"><em>8</em> X <em>4</em> m<sup>2</sup>/planta</td>
+              </tr>
+              <tr>
+                <th colspan="2" scope="row">Área Produtiva:</th>
+                <td><em>1,43</em></td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <th colspan="2" scope="row">Área Total (hectares):</th>
+                <td><em>1,45</em>(ha)</td>
+              </tr>
+            </tfoot>
+          </table>
+        </section>
+      </section>
+
+      <!-- Tabela 2 com detalhes  sobre o setor em questão-->
+      <table>
+        <thead>
+          <tr>
+            <th colspan="3">Detalhamento</th>
+            <th>Área (ha)</th>
+            <th>Siglas</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th colspan="1">Travada</th>
+            <td colspan="2">0</td>
+            <td>0,00</td>
+            <td>T</td>
+          </tr>
+          <tr>
+            <th colspan="1">Falha</th>
+            <td colspan="2">5</td>
+            <td>0,02</td>
+            <td>F</td>
+          </tr>
+          <tr>
+            <th colspan="1">Replantio</th>
+            <td colspan="2">3</td>
+            <td>0,01</td>
+            <td>R</td>
+          </tr>
+          <tr>
+            <th colspan="1">TOMMY</th>
+            <td colspan="2">446</td>
+            <td>1,43</td>
+            <td>V1</td>
+          </tr>
+          <tr>
+            <th colspan="1">#&nbsp;</th>
+            <td colspan="2">#&nbsp;</td>
+            <td>#&nbsp;</td>
+            <td>V2</td> 
+          </tr>
+          <tr>
+            <th colspan="1">#&nbsp;</th>
+            <td colspan="2">#&nbsp;</td>
+            <td>#&nbsp;</td>
+            <td>V3</td> 
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <th colspan="1">Produtivas</th>
+            <td colspan="2">446</td>
+            <td>1,43</td>
+            <td>#</td>
+          </tr>
+          <tr>
+            <th colspan="1">Improdutivas</th>
+            <td colspan="2">8</td>
+            <td>0,03</td>
+            <td>#</td>
+          </tr>
+          <tr>
+            <th colspan="1">TOTAL</th>
+            <td colspan="2">454plt</td>
+            <td>1,45ha</td>
+            <td>#&nbsp;</td>
+          </tr>
+        </tfoot>
+      </table>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <section class="section_login">
+      <p>
+        Cadastre-se em nossa newsletter e receba informações sobre a <span class="span_color3">Finoagro</span>
+      </p>
+      <input type="email" name="input_email" id="input_email" size="10" placeholder="Digite seu email" required>
+      <button type="submit">Cadastrar</button>
+    </section>
+    <section id="section_saiba-mais">
+      <div class="section_saiba-mais-img">
+          <img src="../Imagens/Logo_Finoagro_w.png" alt="Imagem Logo_Finoagro_w">
+      </div>
+      <section class="options">
+        <div class="div_institucional">
+          <h2>INSTITUCIONAL</h2>
+          <nav>
+            <ul>
+              <li><a href="#">Sobre nós</a></li>
+              <li><a href="#">Sustentabilidade</a></li>
+              <li><a href="#">Notícias</a></li>
+              <li><a href="#">Relatório De Transparência Salarial</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="div_fale-conosco">
+            <h2>FALE CONOSCO</h2>
+            <nav>
+                <ul>
+                    <li><a href="#">Contato</a></li>
+                    <li><a href="#">Trabalhe Conosco</a></li>
+                </ul>
+            </nav>
+        </div>
+      </section>
+      <div class="section-redes-sociais">
+          <div>
+              <a href="#" target="_self" rel="noopener noreferrer">
+                  <i class="fa-brands fa-facebook"></i>
+              </a>
+          </div>
+          <div>
+              <a href="#" target="_self" rel="noopener noreferrer">
+                  <i class="fa-brands fa-twitter"></i>
+              </a>
+          </div>
+          <div>
+              <a href="#" target="_self" rel="noopener noreferrer">
+                  <i class="fa-brands fa-youtube"></i>
+              </a>
+          </div>
+          <div>
+              <a href="#" target="_self" rel="noopener noreferrer">
+                  <i class="fa-brands fa-instagram"></i>
+              </a>
+          </div>
+      </div>
+    </section>
+    <section class="section_copyrigth">
+      <p>
+          &copy; <time datetime="2025-09-21">21 à 23 de Setembro de 2025</time> Ariclecio Macêdo. All rights reserved. 
+      </p>
+      <p>
+          Desenvolvimento: Ariclecio Macêdo
+      </p>
+      <div class="section_copyrigth-icons">
+        <div>
+            <a href="#" target="_self" rel="noopener noreferrer">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+        </div>
+        <div>
+            <a href="#" target="_self" rel="noopener noreferrer">
+                <i class="fa-brands fa-twitter"></i>
+            </a>
+        </div>
+        <div>
+            <a href="#" target="_self" rel="noopener noreferrer">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+        </div>
+        <div>
+            <a href="#" target="_self" rel="noopener noreferrer">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+        </div>
+      </div>
+    </section>
+  </footer><!-- FIM Footer -->
+</body>
+</html>
