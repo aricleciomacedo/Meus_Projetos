@@ -1,0 +1,225 @@
+main {
+    position: relative;
+    z-index: 1;
+}
+main section.container-carrossel {
+    background-color: var(--cor_8);
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    translate: 0px -134px;
+    z-index: -1;
+    border-radius: 4px;
+    box-shadow: 4px 4px 4px 2px #00000057;
+
+}
+.carrossel {
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.carrossel .group {
+    width: 100%;
+}
+.carrossel .group div {
+    margin: 0;
+}
+.group .card {
+    height: 78vh;
+    padding: 2%;
+    transform: translate(0px, 100px);
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    opacity: 0;
+    border-radius: 10%;
+
+    transition: 1.5s;
+}
+.card img {
+    width: 100%;
+    height: 100%;
+    /* object-fit: cover; */
+
+    transition: all .5s;/* Suavizar efeito :hover */
+}
+
+.card .text-box {
+    position: absolute;
+    top: 35%;
+    left: 10%;
+    color: var(--cor_0);
+    z-index: 1;
+    width: 80%;
+    max-width: 600px;
+    margin: 0;
+    padding: 0;
+}
+.group .card .text-box h2 {
+    font-size: 4.8rem;
+    color: var(--cor_5);
+    text-shadow: 4px 4px 4px black;
+}
+.group .card  .text-box p {
+    color: var(--cor_1);
+    text-shadow: 4px 4px 4px black;
+}
+
+@keyframes animaTexto {
+    100% {
+        transform: scale(1) translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Estilo aplicado quando a classe ativo estiver na classe card */
+.group .card.ativo .text-box h2, .group .card.ativo .text-box p {
+    transform: scale(0.2) translate(120px, 120px);
+    opacity: 0;
+
+    animation: animaTexto .5s ease-in-out .7s forwards; /* Forward mantém o estado final */
+}
+.group .card.ativo .text-box h2 {
+    animation-delay: 1s;
+
+    transition: all .5s;/* Suavizar o efeito :hover */
+}
+/* Se houver um elemento overlay sobrepondo o slider */
+.group .card.ativo {
+    opacity: 1;
+    z-index: 333333;
+}
+.group .card.ativo:hover .text-box h2 {
+    color: #ff3300;
+    text-shadow: none;
+}
+.card.ativo:hover p{
+    text-decoration: underline;
+    color: #ff3300;
+    text-shadow: none;
+}
+.card.ativo:hover img {
+    transform: scale(1.009);
+}
+
+
+/*  
+    Botões de avançar e voltar slide , e para que funcione o main foi posto em postion relative com z-inde=1  
+*/
+.setas {
+    width: 100%;
+    height: 100%;
+    padding: 0 1%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.setas #anterior, .setas #proximo {
+    z-index: 444444;
+}
+
+.setas button {
+    width: 34px;
+    height: 100px;
+    padding: 0;
+
+    background-color: rgba(0, 0, 255, 0.377);
+    box-shadow: 2px 2px 0px 1px rgba(0, 0, 0, 0.315);
+    border: 0;
+    border-radius: 8px;
+    cursor: pointer;
+    /* font-size: 1.2rem; Em caso de imagem no lugar de ícones, não funciona.*/
+    transition: .2s;
+}
+
+.setas button img {
+    width: 80%;
+    height: 80%;
+    /* object-fit: contain; */
+}
+.setas button:hover {
+    background-color: rgba(2, 2, 122, 0.473);/* Muda para essa cor. */
+}
+
+
+/* 
+    Grupo de Marcadores (Links Rápidos)
+*/
+.grupo-de-marcadores {
+    width: calc(220px - 2px);
+    position: absolute;
+    left: 50%;
+    bottom: 8px;
+    z-index: 7777777;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;/* Assim o snapping no eixo X é ativado */
+    translate: -50% 0px;
+    border-radius: 12px;
+}
+.grupo-de-marcadores::-webkit-scrollbar { /* Barra de scrool*/
+    background-color: transparent;
+    height: 0.875rem;/* 14px */
+} 
+.grupo-de-marcadores::-webkit-scrollbar-track { /* Trilha da barra de scrool*/
+    background-color: transparent;
+    border-radius: 0.625rem;
+} 
+.grupo-de-marcadores::-webkit-scrollbar-thumb { /* barrinha (thumm) da barra de scrool*/
+    background-color: rgba(0, 0, 255, 0.377);
+    border-radius: 0.625rem;
+    transition: background .7s;
+} 
+.grupo-de-marcadores::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(0, 0, 121, 0.986);
+}
+.grupo-de-marcadores ul {
+    display: flex;
+    flex-wrap: nowrap;
+    list-style: none;
+}
+.grupo-de-marcadores .marcador{
+    width: 22px;
+    height: 0px;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #1605ff;
+    filter: drop-shadow(-2px 1px 9px var(--cor_8));
+
+    scroll-snap-align: center; /* garante o alinhamento do marcador ao centro */
+
+    /* Centraliza o símbolo se estiver dentro do marcador */
+    text-align: center;
+    align-content: center;
+    line-height: 10px;
+
+    font-size: 1.4rem;
+    opacity:  .4;
+
+    transition: all .2s ease; /* Suaviza a transição */
+}
+.grupo-de-marcadores .marcador:hover {
+    opacity: .8;
+    background-color: #2212fa;
+}
+
+.grupo-de-marcadores .marcador.ativo {
+    opacity: 1;
+    background-color: #2212fa;
+}
+
+/* Media Queries */
+@media (max-height: 360px) {
+    .group .card {/* Ajustar a altura */
+        height: 72vh;
+    }
+    main section.container-carrossel {
+        height: calc(100vh + 56px);
+    }
+}

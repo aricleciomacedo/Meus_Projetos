@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="Mapa de Áreas e Setores" content="Areas e Setores da FinoAgro.">
+  <title>Croqui de áreas FinoAgro</title>
+
+  <!-- Descrição do auto e do projeto -->
+  <meta name="author" content="Ariclecio Macedo"> <!-- Autor da página -->
+  <meta name="description" content="Croqui de Áreas"> <!-- Descrição do conteúdo -->
+
+  <!-- (thumbmail) Miniatura de link para compartilhamento em redes sociais -->
+  <meta property="og:title" content="Croqui de areas e Setores FinoAgri"> 
+  <meta property="og:descripition" content="Projeto com Mapa de Areas e Setores da FinoAgri">
+  <meta property="og:image" content="https://github.com/aricleciomacedo/Meus_Projetos/blob/main/thumbnail_Mapa_plantas-FinoAgri.png?raw=true">
+  <meta property="og:url" content="https://aricleciomacedo.github.io/Meus_Projetos/Mapa_plantas-FinoAgri/index.html">
+  
+  <link rel="shortcut icon" href="./icons/LetraAicon.ico" type="image/x-icon">
+
+  <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+  <!-- <link rel="stylesheet" href="styleCarrocel.css" type="text/css" media="all" /> -->
+  <link rel="stylesheet" href="styleCarrocel.css" type="text/css" media="all" />
+
+  <!-- Fontawesome -->
+  <script src="https://kit.fontawesome.com/4662ecff30.js" crossorigin="anonymous"></script>
+  
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <script src="./src/script.js" defer></script>
+</head>
+<body>
+
+  <!-- Atualizado Sexta 13 de Fevereiro de 2026 -->
+
+  <!-- HEADER -->
+  <header>
+    <div class="logo_flags-languages">
+      <div class="logo">
+        <a href="#section_saiba-mais">
+          <img fetchpriority="high" width="800" height="378" src="./Imagens/Logo_Finoagro.png" alt="Imagem Logo FinoAgro" srcset="./Imagens/Logo_Finoagro-946w.png 946w, ./Imagens/Logo_Finoagro-300w.png 300w, ./Imagens/Logo_Finoagro-768w.png 768w" sizes="(max-width: 800px) 100vw, 800px">
+        </a>
+      </div>
+
+      <div class="flags_and_menu-toogle">
+        <div id="flags-languages" class="flag-size">
+          <div>
+            <a href="#">
+              <img src="Imagens/flagUSA.png" alt="Flag USA" title="English" class="english">
+            </a>
+          </div>
+          <div>
+            <a href="#">
+              <img src="Imagens/flagBrasil.png" alt="Flag Brazil" title="Portuguese" class="brazil">
+            </a>
+          </div>
+          <div>
+            <a href="#">
+              <img src="Imagens/flagSpain.png" alt="Flag Spain" title="Spanish" class="spanish">
+            </a>
+          </div>
+          <!-- <ul style="float: left;">
+            <li id="English">
+              <a href="#" title="English" class="english">English</a>
+            </li>
+            <li id="Spanish">
+              <a href="#" title="Spanish" class="spanish">Spanish</a>
+            </li>
+            <li id="Portuguese">
+              <a href="#"  title="Portuguese" class="brazil">Portuguese</a>
+            </li>
+          </ul> -->
+        </div>
+        <div class="menu-mobile">
+          <div class="menu-open">
+            <i class="button-open">
+              <!-- <img src="list.svg" alt="símbolo list .svg"> -->
+                &lt;&nbsp;menu
+            </i>
+          </div>
+          <div class="menu-closed">
+            <!-- <i class="bi bi-x-lg"></i> -->
+            <i class="button-close">X</i>
+            <div id="mobile-menu" class="menu-toogle">
+              <nav>
+                <ul>
+                  <li><span class="span_color2"><a href="#">Home</a></span></li>
+                  <li><a href="#">Finoagro</a></li>
+                  <li><a href="#">Produtos</a></li>
+                  <li><a href="#">Sustentabilidades</a></li>
+                  <li><a href="#">Notícias</a></li>
+                  <li><a href="#">Contato</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          <div class="menu-toogle hide">
+            <nav>
+              <ul>
+                <li><span class="span_color2"><a href="#">Home</a></span></li>
+                <li><a href="#">Finoagro</a></li>
+                <li><a href="#">Produtos</a></li>
+                <li><a href="#">Sustentabilidades</a></li>
+                <li><a href="#">Notícias</a></li>
+                <li><a href="#">Contato</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <p class="p_copyright">
+            Este projeto têm em vista apenas mostrar as áreas e setores na Fazenda Ubarana, e sua interface semelhante ao da FinoAgro não tem outro fins que não seja ilustrativo.
+            Todos os direitos de imagens e outros detalhes estão reservados à <a href="https://finoagro.com.br/" target="_blank" rel="noopener noreferrer">&copy;FinoAgro</a>.
+        </p>
+    </div>
+  </header><!-- FIM HEADER -->
+
+  <main>
+    <!-- Sessão Título -->
+    <section class="titulo">
+      <h1>
+          <span class="span_color4">Mapa</span> 
+          <span class="span_color2">de</span> 
+          <span class="span_color1">Áreas</span> 
+          <span class="span_color2">e</span> 
+          <span class="span_color3">Setores</span>
+      </h1>
+      <p>
+          <!-- ❷ 	&#10103;--> Estas são as áreas que vão da <span>M2</span> até <span>M9</span> com seu respectivos <span>Setores</span> logo após o rio Pataxó.
+      </p>
+    </section><!-- FIM titulo -->
+
+    <!-- Carrossel de Áreas e Setores -->
+    <section class="container-carrossel">
+      <div class="carrossel"><!-- Container -->
+          <div class="group"><!-- Container Slider -->
+            <!-- M2 -->
+             <div class="card ativo" title="M2 S2a depois do rio pataxó">
+              <a href="./pages/indexM2S2a.html">
+                  <picture>
+                      <!-- Usamos aqui uma imagem maior para telas acima de 1200px -->
+                      <source media="(min-width: 800px)" srcset="./imagensCarrossel/img1_800.jpg" alt="M2 S2 DEPOIS DO RIO PATAXÓ.">
+                      <!-- Usamos aqui outra resolução de imagem par telas médias -->
+                      <source media="(min-width: 500px)" srcset="./imagensCarrossel/img1_500.jpg" alt="M2 S2 DEPOIS DO RIO PATAXÓ.">
+                      <!-- Aqui é menor imagem para telas pequenas (e fallback) -->
+                      <img src="./imagensCarrossel/img1_400.jpg" alt="M2 S2 DEPOIS DO RIO PATAXÓ.">
+                  </picture>
+                  <div class="text-box">
+                      <h2>M2 S2a</h2>
+                      <p>M2 S2 DEPOIS DO RIO PATAXÓ.</p>
+                  </div>
+              </a>
+            </div>
+            <div class="card" title="M2 S2 depois do dreno">
+              <a href="./pages/indexM2S2b.html">
+                  <picture >
+                      <source media="(min-width: 800px)" srcset="./imagensCarrossel/img2_800.jpg" alt="Área 2 Setor 2 depois do dreno">
+                      <source media="(min-width: 500px)" srcset="./imagensCarrossel/img2_500.jpg" alt="Área 2 Setor 2 depois do dreno">
+                      <img src="./imagensCarrossel/img2_400.jpg" alt="Área 2 Setor 2 depois do dreno">
+                  </picture>
+                  <div class="text-box">
+                      <h2>M2 S2b</h2>
+                      <p>M2 S2 DEPOIS DO RIO PATAXÓ.</p>
+                  </div>
+              </a>
+            </div>
+            <div class="card" title="Área 2 Setor 1">
+              <a href="./pages/indexM2S1.html">
+                <picture>
+                  <source media="(min-width: 800px)" srcset="./imagensCarrossel/img2c_800.jpg" alt="Área 2 Setor 1">
+                  <source media="(min-width: 500px)" srcset="./imagensCarrossel/img2c_500.jpg" alt="Área 2 Setor 1">
+                  <img src="./imagensCarrossel/img2c_400.jpg" alt="Área 2 Setor 1">
+                </picture>
+                <div class="text-box">
+                  <h2>M2 S1</h2>
+                  <p>************&nbsp;🥭&nbsp;************</p>
+                </div>
+              </a>
+            </div>
+            
+            <!-- M3 -->
+            <div class="card" title="Área 3 Setor 1">
+                <a href="./pages/indexM3S1.html">
+                  <picture>
+                    <source media="(min-width: 800px)" srcset="./imagensCarrossel/img3s1_800.jpg" alt="Área 3 Setor 1">
+                    <source media="(min-width: 500px)" srcset="./imagensCarrossel/img3s1_500.jpg" alt="Área 3 Setor 1">
+                    <img src="./imagensCarrossel/img3s1_400.jpg" alt="Área 3 Setor 1">
+                  </picture>
+                  <div class="text-box">
+                    <h2>M3 S1</h2>
+                    <p>************&nbsp;🥭&nbsp;************</p>
+                  </div>
+                </a>
+            </div>
+            <div class="card" title="Área 3 Setor 2">
+                <a href="./pages/indexM3S2.html">
+                  <picture>
+                    <source media="(min-width: 800px)" srcset="./imagensCarrossel/img3s2_800.jpg" alt="Área 3 Setor 2">
+                    <source media="(min-width: 500px)" srcset="./imagensCarrossel/img3s2_500.jpg" alt="Área 3 Setor 2">
+                    <img src="./imagensCarrossel/img3s2_400.jpg" alt="Área 3 Setor 2">
+                  </picture>
+                  <div class="text-box">
+                    <h2>M3 S2</h2>
+                    <p>************&nbsp;🥭&nbsp;************</p>
+                  </div>
+                </a>
+            </div>
+            <div class="card" title="Área 3 Setor 3">
+                <a href="./pages/indexM3S3.html">
+                  <picture>
+                    <source media="(min-width: 800px)" srcset="./imagensCarrossel/img3s3_800.jpg" alt="Área 3 Setor 3">
+                    <source media="(min-width: 500px)" srcset="./imagensCarrossel/img3s3_500.jpg" alt="Área 3 Setor 3">
+                    <img src="./imagensCarrossel/img3s3_400.jpg" alt="Área 3 Setor 3">
+                  </picture>
+                  <div class="text-box">
+                    <h2>M3 S3</h2>
+                    <p>************&nbsp;🥭&nbsp;************</p>
+                  </div>
+                </a>
+            </div>
+            <div class="card" title="Área 3 Setor 4">
+                <a href="./pages/indexM3S3.html">
+                  <picture>
+                    <source media="(min-width: 800px)" srcset="./imagensCarrossel/img3s4_800.jpg" alt="Área 3 Setor 4">
+                    <source media="(min-width: 500px)" srcset="./imagensCarrossel/img3s4_500.jpg" alt="Área 3 Setor 4">
+                    <img src="./imagensCarrossel/img3s4_400.jpg" alt="Área 3 Setor 4">
+                  </picture>
+                  <div class="text-box">
+                    <h2>M3 S4</h2>
+                    <p>************&nbsp;🥭&nbsp;************</p>
+                  </div>
+                </a>
+            </div>
+            <div class="card" title="Área 3 Setor 5">
+                <a href="./pages/indexM3S5.html">
+                  <picture>
+                    <source media="(min-width: 800px)" srcset="./imagensCarrossel/img3s5_800.jpg" alt="Área 3 Setor 5">
+                    <source media="(min-width: 500px)" srcset="./imagensCarrossel/img3s5_500.jpg" alt="Área 3 Setor 5">
+                    <img src="./imagensCarrossel/img3s5_400.jpg" alt="Área 3 Setor 5">
+                  </picture>
+                  <div class="text-box">
+                    <h2>M3 S5</h2>
+                    <p>************&nbsp;🥭&nbsp;************</p>
+                  </div>
+                </a>
+            </div>
+            <div class="card" title="Área 3 Setor 6">
+                <a href="./pages/indexM3S6.html">
+                  <picture>
+                    <source media="(min-width: 800px)" srcset="./imagensCarrossel/img3s6_800.jpg" alt="Área 3 Setor 6">
+                    <source media="(min-width: 500px)" srcset="./imagensCarrossel/img3s6_500.jpg" alt="Área 3 Setor 6">
+                    <img src="./imagensCarrossel/img3s6_400.jpg" alt="Área 3 Setor 6">
+                  </picture>
+                  <div class="text-box">
+                    <h2>M3 S6</h2>
+                    <p>************&nbsp;🥭&nbsp;************</p>
+                  </div>
+                </a>
+            </div>
+
+            <!-- M4 -->
+            <div class="card" title="Área 4 Setor 1">
+              <a href="./pages/indexM4S1.html">
+                <picture>
+                  <source media="(min-width: 800px)" srcset="./imagensCarrossel/img4s1_800.jpg" alt="Área 4 Setor 1">
+                  <source media="(min-width: 500px)" srcset="./imagensCarrossel/img4s1_500.jpg" alt="Área 4 Setor 1">
+                  <img src="./imagensCarrossel/img4s1_400.jpg" alt="Área 4 Setor 1">
+                </picture>
+                <div class="text-box">
+                  <h2>M4 S1</h2>
+                  <p>************&nbsp;🥭&nbsp;************</p>
+                </div>
+              </a>
+            </div>
+            <div class="card" title="Área 4 Setor 2">
+              <a href="./pages/indexM4S2.html">
+                <picture>
+                  <source media="(min-width: 800px)" srcset="./imagensCarrossel/img4s2_800.jpg" alt="Área 4 Setor 2">
+                  <source media="(min-width: 500px)" srcset="./imagensCarrossel/img4s2_500.jpg" alt="Área 4 Setor 2">
+                  <img src="./imagensCarrossel/img4s2_400.jpg" alt="Área 4 Setor 2">
+                </picture>
+                <div class="text-box">
+                  <h2>M4 S2</h2>
+                  <p>************&nbsp;🥭&nbsp;************</p>
+                </div>
+              </a>
+            </div>
+            <div class="card" title="Área 4 Setor 3">
+              <a href="./pages/indexM4S3.html">
+                <picture>
+                  <source media="(min-width: 800px)" srcset="./imagensCarrossel/img4s3_800.jpg" alt="Área 4 Setor 3">
+                  <source media="(min-width: 500px)" srcset="./imagensCarrossel/img4s3_500.jpg" alt="Área 4 Setor 3">
+                  <img src="./imagensCarrossel/img4s3_400.jpg" alt="Área 4 Setor 3">
+                </picture>
+                <div class="text-box">
+                  <h2>M4 S3</h2>
+                  <p>************&nbsp;🥭&nbsp;************</p>
+                </div>
+              </a>
+            </div>
+            <div class="card" title="Área 4 Setor 4">
+              <a href="./pages/indexM4S4.html">
+                <picture>
+                  <source media="(min-width: 800px)" srcset="./imagensCarrossel/img4s4_800.jpg" alt="Área 4 Setor 4">
+                  <source media="(min-width: 500px)" srcset="./imagensCarrossel/img4s4_500.jpg" alt="Área 4 Setor 4">
+                  <img src="./imagensCarrossel/img4s4_400.jpg" alt="Área 4 Setor 4">
+                </picture>
+                <div class="text-box">
+                  <h2>M4 S4</h2>
+                  <p>************&nbsp;🥭&nbsp;************</p>
+                </div>
+              </a>
+            </div>
+
+            <!-- M5 -->
+            <div class="card" title="Área 5 Setor 1">
+              <a href="./pages/indexM5S1.html">
+                <picture>
+                  <source media="(min-width: 800px)" srcset="./imagensCarrossel/img5s1_800.jpg" alt="Área 5 Setor 1">
+                  <source media="(min-width: 500px)" srcset="./imagensCarrossel/img5s1_500.jpg" alt="Área 5 Setor 1">
+                  <img src="./imagensCarrossel/img5s1_400.jpg" alt="Área 5 Setor 1">
+                </picture>
+                <div class="text-box">
+                  <h2>M5 S1</h2>
+                  <p>************&nbsp;🥭&nbsp;************</p>
+                </div>
+              </a>
+            </div>
+            <div class="card" title="Área 5 Setor 2">
+              <a href="./pages/indexM5S2.html">
+                <picture>
+                  <source media="(min-width: 800px)" srcset="./imagensCarrossel/img5s2_800.jpg" alt="Área 5 Setor 2">
+                  <source media="(min-width: 500px)" srcset="./imagensCarrossel/img5s2_500.jpg" alt="Área 5 Setor 2">
+                  <img src="./imagensCarrossel/img5s2_400.jpg" alt="Área 5 Setor 2">
+                </picture>
+                <div class="text-box">
+                  <h2>M5 S2</h2>
+                  <p>************&nbsp;🥭&nbsp;************</p>
+                </div>
+              </a>
+            </div>
+            <div class="card" title="Área 5 Setor 3">
+              <a href="./pages/indexM5S3.html">
+                <picture>
+                  <source media="(min-width: 800px)" srcset="./imagensCarrossel/img5s3_800.jpg" alt="Área 5 Setor 3">
+                  <source media="(min-width: 500px)" srcset="./imagensCarrossel/img5s3_500.jpg" alt="Área 5 Setor 3">
+                  <img src="./imagensCarrossel/img5s3_400.jpg" alt="Área 5 Setor 3">
+                </picture>
+                <div class="text-box">
+                  <h2>M5 S3</h2>
+                  <p>************&nbsp;🥭&nbsp;************</p>
+                </div>
+              </a>
+            </div>
+
+            <!-- M6 -->
+            <div class="card" title="Área 6 Setor 1">
+              <a href="./pages/indexM6S1.html">
+                <picture>
+                  <source media="(min-width: 800px)" srcset="./imagensCarrossel/img6s1_800.jpg" alt="Área 6 Setor 1">
+                  <source media="(min-width: 500px)" srcset="./imagensCarrossel/img6s1_500.jpg" alt="Área 6 Setor 1">
+                  <img src="./imagensCarrossel/img6s1_400.jpg" alt="Área 6 Setor 1">
+                </picture>
+                <div class="text-box">
+                  <h2>M6 S1</h2>
+                  <p>************&nbsp;🥭&nbsp;************</p>
+                </div>
+              </a>
+            </div>
+            <div class="card" title="Área 6 Setor 2">
+              <a href="./pages/indexM6S2.html">
+                <picture>
+                  <source media="(min-width: 800px)" srcset="./imagensCarrossel/img6s2_800.jpg" alt="Área 6 Setor 2">
+                  <source media="(min-width: 500px)" srcset="./imagensCarrossel/img6s2_500.jpg" alt="Área 6 Setor 2">
+                  <img src="./imagensCarrossel/img6s2_400.jpg" alt="Área 6 Setor 2">
+                </picture>
+                <div class="text-box">
+                  <h2>M6 S2</h2>
+                  <p>************&nbsp;🥭&nbsp;************</p>
+                </div>
+              </a>
+            </div>
+            <div class="card" title="Área 6 Setor 3">
+              <a href="./pages/indexM6S3.html">
+                <picture>
+                  <source media="(min-width: 800px)" srcset="./imagensCarrossel/img6s3_800.jpg" alt="Área 6 Setor 3">
+                  <source media="(min-width: 500px)" srcset="./imagensCarrossel/img6s3_500.jpg" alt="Área 6 Setor 3">
+                  <img src="./imagensCarrossel/img6s3_400.jpg" alt="Área 6 Setor 3">
+                </picture>
+                <div class="text-box">
+                  <h2>M6 S3</h2>
+                  <p>************&nbsp;🥭&nbsp;************</p>
+                </div>
+              </a>
+            </div>
+            
+            <!-- M7 -->
+            <div class="card" title="Área 7 Setor 1">
+              <a href="./pages/indexM7S1.html">
+                <picture>
+                  <source media="(min-width: 800px)" srcset="./imagensCarrossel/img7s1_800.jpg" alt="Área 7 Setor 1">
+                  <source media="(min-width: 500px)" srcset="./imagensCarrossel/img7s1_500.jpg" alt="Área 7 Setor 1">
+                  <img src="./imagensCarrossel/img7s1_400.jpg" alt="Área 7 Setor 1">
+                </picture>
+                <div class="text-box">
+                  <h2>M7 S1</h2>
+                  <p>************&nbsp;🥭&nbsp;************</p>
+                </div>
+              </a>
+            </div>
+            <div class="card" title="Área 7 Setor 2">
+              <a href="./pages/indexM7S2.html">
+                <picture>
+                  <source media="(min-width: 800px)" srcset="./imagensCarrossel/img7s2_800.jpg" alt="Área 7 Setor 2">
+                  <source media="(min-width: 500px)" srcset="./imagensCarrossel/img7s2_500.jpg" alt="Área 7 Setor 2">
+                  <img src="./imagensCarrossel/img7s2_400.jpg" alt="Área 7 Setor 2">
+                </picture>
+                <div class="text-box">
+                  <h2>M7 S2</h2>
+                  <p>************&nbsp;🥭&nbsp;************</p>
+                </div>
+              </a>
+            </div>
+            <div class="card" title="Área 7 Setor 3">
+              <a href="./pages/indexM7S3.html">
+                <picture>
+                  <source media="(min-width: 800px)" srcset="./imagensCarrossel/img7s3_800.jpg" alt="Área 7 Setor 3">
+                  <source media="(min-width: 500px)" srcset="./imagensCarrossel/img7s3_500.jpg" alt="Área 7 Setor 3">
+                  <img src="./imagensCarrossel/img7s3_400.jpg" alt="Área 7 Setor 3">
+                </picture>
+                <div class="text-box">
+                  <h2>M7 S3</h2>
+                  <p>************&nbsp;🥭&nbsp;************</p>
+                </div>
+              </a>
+            </div>
+            <div class="card" title="Área 7 Setor 4">
+              <a href="./pages/indexM7S4.html">
+                <picture>
+                  <source media="(min-width: 800px)" srcset="./imagensCarrossel/img7s4_800.jpg" alt="Área 7 Setor 4">
+                  <source media="(min-width: 500px)" srcset="./imagensCarrossel/img7s4_500.jpg" alt="Área 7 Setor 4">
+                  <img src="./imagensCarrossel/img7s4_400.jpg" alt="Área 7 Setor 4">
+                </picture>
+                <div class="text-box">
+                  <h2>M7 S4</h2>
+                  <p>************&nbsp;🥭&nbsp;************</p>
+                </div>
+              </a>
+            </div>
+            
+            <!-- M8 -->
+            <div class="card" title="Área 8 Setor 1">
+              <a href="./pages/indexM8S1.html">
+                <picture>
+                  <source media="(min-width: 800px)" srcset="./imagensCarrossel/img8s1_800.jpg" alt="Área 8 Setor 1">
+                  <source media="(min-width: 500px)" srcset="./imagensCarrossel/img8s1_500.jpg" alt="Área 8 Setor 1">
+                  <img src="./imagensCarrossel/img8s1_400.jpg" alt="Área 8 Setor 1">
+                </picture>
+                <div class="text-box">
+                  <h2>M8 S1</h2>
+                  <p>************&nbsp;🥭&nbsp;************</p>
+                </div>
+              </a>
+            </div>
+            <div class="card" title="Área 8 Setor 2">
+              <a href="./pages/indexM8S2.html">
+                <picture>
+                  <source media="(min-width: 800px)" srcset="./imagensCarrossel/img8s2_800.jpg" alt="Área 8 Setor 2">
+                  <source media="(min-width: 500px)" srcset="./imagensCarrossel/img8s2_500.jpg" alt="Área 8 Setor 2">
+                  <img src="./imagensCarrossel/img8s2_400.jpg" alt="Área 8 Setor 2">
+                </picture>
+                <div class="text-box">
+                  <h2>M8 S2</h2>
+                  <p>************&nbsp;🥭&nbsp;************</p>
+                </div>
+              </a>
+            </div>
+            <div class="card" title="Área 8 Setor 3">
+              <a href="./pages/indexM8S3.html">
+                <picture>
+                  <source media="(min-width: 800px)" srcset="./imagensCarrossel/img8s3_800.jpg" alt="Área 8 Setor 3">
+                  <source media="(min-width: 500px)" srcset="./imagensCarrossel/img8s3_500.jpg" alt="Área 8 Setor 3">
+                  <img src="./imagensCarrossel/img8s3_400.jpg" alt="Área 8 Setor 3">
+                </picture>
+                <div class="text-box">
+                  <h2>M8 S3</h2>
+                  <p>************&nbsp;🥭&nbsp;************</p>
+                </div>
+              </a>
+            </div>
+            <div class="card" title="Área 8 Setor 4">
+              <a href="./pages/indexM8S4.html">
+                <picture>
+                  <source media="(min-width: 800px)" srcset="./imagensCarrossel/img8s4_800.jpg" alt="Área 8 Setor 4">
+                  <source media="(min-width: 500px)" srcset="./imagensCarrossel/img8s4_500.jpg" alt="Área 8 Setor 4">
+                  <img src="./imagensCarrossel/img8s4_400.jpg" alt="Área 8 Setor 4">
+                </picture>
+                <div class="text-box">
+                  <h2>M8 S4</h2>
+                  <p>************&nbsp;🥭&nbsp;************</p>
+                </div>
+              </a>
+            </div>
+
+            <!-- M9 -->
+            <div class="card" title="Área 9 Setor 1">
+              <a href="./pages/indexM9S1.html">
+                <picture>
+                  <source media="(min-width: 800px)" srcset="./imagensCarrossel/img9s1_800.jpg" alt="Área 9 Setor 1">
+                  <source media="(min-width: 500px)" srcset="./imagensCarrossel/img9s1_500.jpg" alt="Área 9 Setor 1">
+                  <img src="./imagensCarrossel/img9s1_400.jpg" alt="Área 9 Setor 1">
+                </picture>
+                <div class="text-box">
+                  <h2>M9 S1</h2>
+                  <p>************&nbsp;🥭&nbsp;************</p>
+                </div>
+              </a>
+            </div>
+            <div class="card" title="Área 9 Setor 2">
+              <a href="./pages/indexM9S2.html">
+                <picture>
+                  <source media="(min-width: 800px)" srcset="./imagensCarrossel/img9s2_800.jpg" alt="Área 9 Setor 2">
+                  <source media="(min-width: 500px)" srcset="./imagensCarrossel/img9s2_500.jpg" alt="Área 9 Setor 2">
+                  <img src="./imagensCarrossel/img9s2_400.jpg" alt="Área 9 Setor 2">
+                </picture>
+                <div class="text-box">
+                  <h2>M9 S2</h2>
+                  <p>************&nbsp;🥭&nbsp;************</p>
+                </div>
+              </a>
+            </div>
+            <div class="card" title="Área 9 Setor 3">
+              <a href="./pages/indexM9S3.html">
+                <picture>
+                  <source media="(min-width: 800px)" srcset="./imagensCarrossel/img9s3_800.jpg" alt="Área 9 Setor 3">
+                  <source media="(min-width: 500px)" srcset="./imagensCarrossel/img9s3_500.jpg" alt="Área 9 Setor 3">
+                  <img src="./imagensCarrossel/img9s3_400.jpg" alt="Área 9 Setor 3">
+                </picture>
+                <div class="text-box">
+                  <h2>M9 S3</h2>
+                  <p>************&nbsp;🥭&nbsp;************</p>
+                </div>
+              </a>
+            </div>
+            <div class="card" title="Área 9 Setor 4">
+              <a href="./pages/indexM9S4.html">
+                <picture>
+                  <source media="(min-width: 800px)" srcset="./imagensCarrossel/img9s4_800.jpg" alt="Área 9 Setor 4">
+                  <source media="(min-width: 500px)" srcset="./imagensCarrossel/img9s4_500.jpg" alt="Área 9 Setor 4">
+                  <img src="./imagensCarrossel/img9s4_400.jpg" alt="Área 9 Setor 4">
+                </picture>
+                <div class="text-box">
+                  <h2>M9 S4</h2>
+                  <p>************&nbsp;🥭&nbsp;************</p>
+                </div>
+              </a>
+            </div>
+
+            <!-- Botões de avançar e voltar slide  -->
+            <div class="setas">
+              <button id="anterior"><img src="./imagensCarrossel/anterior.png" alt="Botão Anterior"></button>
+              <button id="proximo"><img src="./imagensCarrossel/proximo.png" alt="Botão Próximo"></button>
+            </div>
+          </div><!-- Fim div group -->
+          
+          <!-- Grupo de Marcadores 🥭-->
+          <div class="grupo-de-marcadores">
+            <ul>
+              <li>
+                <div class="marcador ativo" title="M2S2a">&nbsp;</div>
+              </li>
+              <li>
+                <div class="marcador" title="M2S2b">&nbsp;</div>
+              </li>
+              <li>
+                <div class="marcador" title="M2S1">&nbsp;</div>
+              </li>
+              <li>
+                <div class="marcador" title="M3S1">&nbsp;</div>
+              </li>
+              <li>
+                <div class="marcador" title="M3S2">&nbsp;</div>
+              </li>
+              <li>
+                <div class="marcador" title="M3S3">&nbsp;</div>
+              </li>
+              <li>
+                <div class="marcador" title="M3S4">&nbsp;</div>
+              </li>
+              <li>
+                <div class="marcador" title="M3S5">&nbsp;</div>
+              </li>
+              <li>
+                <div class="marcador" title="M3S6">&nbsp;</div>
+              </li>
+              <li>
+                <div class="marcador" title="M4S1">&nbsp;</div>
+              </li>
+              <li>
+                <div class="marcador" title="M4S2">&nbsp;</div>
+              </li>
+              <li>
+                <div class="marcador" title="M4S3">&nbsp;</div>
+              </li>
+              <li>
+                <div class="marcador" title="M4S4">&nbsp;</div>
+              </li>
+              <li>
+                <div class="marcador" title="M5S1">&nbsp;</div>
+              </li>
+              <li>
+                <div class="marcador" title="M5S2">&nbsp;</div>
+              </li>
+              <li>
+                <div class="marcador" title="M5S3">&nbsp;</div>
+              </li>
+              <li>
+                <div class="marcador" title="M6S1">&nbsp;</div>
+              </li>
+              <li>
+                <div class="marcador" title="M6S2">&nbsp;</div>
+              </li>
+              <li>
+                <div class="marcador" title="M6S3">&nbsp;</div>
+              </li>
+              <li>
+                <div class="marcador" title="M7S1">&nbsp;</div>
+              </li>
+              <li>
+                <div class="marcador" title="M7S2">&nbsp;</div>
+              </li>
+              <li>
+                <div class="marcador" title="M7S3">&nbsp;</div>
+              </li>
+              <li>
+                <div class="marcador" title="M7S4">&nbsp;</div>
+              </li>
+              <li>
+                <div class="marcador" title="M8S1">&nbsp;</div>
+              </li>
+              <li>
+                <div class="marcador" title="M8S2">&nbsp;</div>
+              </li>
+              <li>
+                <div class="marcador" title="M8S3">&nbsp;</div>
+              </li>
+              <li>
+                <div class="marcador" title="M8S4">&nbsp;</div>
+              </li>
+              <li>
+                <div class="marcador" title="M9S1">&nbsp;</div>
+              </li>
+              <li>
+                <div class="marcador" title="M9S2">&nbsp;</div>
+              </li>
+              <li>
+                <div class="marcador" title="M9S3">&nbsp;</div>
+              </li>
+              <li>
+                <div class="marcador" title="M9S4">&nbsp;</div>
+              </li>
+            </ul>
+          </div>
+      </div><!-- FIM div carrossel -->
+    </section> <!-- FIM Carrossel de Áreas e Setores -->
+
+    <!-- SESSÃO container-de-areas-e-setores -->
+    <section class="container-de-areas-e-setores">
+      <h2>Áreas e Setores</h2>
+      <!-- M2 -->
+      <div>
+        <div class="setor ativo" title="M2 S2 depois do rio Pataxó">
+          <a href="./pages/indexM2S2a.html">M2 S2</a>
+        </div>
+        <div class="setor" title="M2 S2 depois do dreno">
+          <a href="./pages/indexM2S2b.html">M2 S2</a>
+        </div>
+        <div class="setor">
+          <a href="./pages/indexM2S1.html.html">M2 S1</a>
+        </div>
+      </div>
+
+      <!-- M3 -->
+      <div>
+        <div class="setor" title="Área 3 Setor 1">
+          <a href="./pages/indexM3S1.html">M3 S1</a>
+        </div>
+        <div class="setor" title="Área 3 Setor 2">
+          <a href="./pages/indexM3S2.html">M3 S2</a>
+        </div>
+        <div class="setor" title="Área 3 Setor 3">
+          <a href="./pages/indexM3S3.html">M3 S3</a>
+        </div>
+        <div class="setor" title="Área 3 Setor 4">
+          <a href="./pages/indexM3S4.html">M3 S4</a>
+        </div>
+        <div class="setor" title="Área 3 Setor 5">
+          <a href="./pages/indexM3S5.html">M3 S5</a>
+        </div>
+        <div class="setor" title="Área 3 Setor 6">
+          <a href="./pages/indexM3S6.html">M3 S6</a>
+        </div>
+      </div>
+
+      <!-- M4 -->
+      <div>
+        <div class="setor" title="Área 4 Setor 1">
+          <a href="./pages/indexM4S1.html">M4 S1</a>
+        </div>
+        <div class="setor" title="Área 4 Setor 2">
+          <a href="./pages/indexM4S2.html">M4 S2</a>
+        </div>
+        <div class="setor" title="Área 4 Setor 3">
+          <a href="./pages/indexM4S3.html">M4 S3</a>
+        </div>
+        <div class="setor" title="Área 4 Setor 4">
+          <a href="./pages/indexM4S4.html">M4 S4</a>
+        </div>
+      </div>
+
+      <!-- M5 -->
+      <div>
+        <div class="setor" title="Área 5 Setor 1">
+          <a href="./pages/indexM5S1.html">M5 S1</a>
+        </div>
+        <div class="setor" title="Área 5 Setor 2">
+          <a href="./pages/indexM5S2.html">M5 S2</a>
+        </div>
+        <div class="setor" title="Área 5 Setor 3">
+          <a href="./pages/indexM5S3.html">M5 S3</a>
+        </div>
+      </div>
+
+      <!-- M6 -->
+      <div>
+        <div class="setor" title="Área 6 Setor 1">
+            <a href="./pages/indexM6S1.html">M6 S1</a>
+        </div>
+        <div class="setor" title="Área 6 Setor 2">
+            <a href="./pages/indexM6S2.html">M6 S2</a>
+        </div>
+        <div class="setor" title="Área 6 Setor 3">
+            <a href="./pages/indexM6S3.html">M6 S3</a>
+        </div>
+      </div>
+
+      <!-- M7 -->
+      <div>
+        <div class="setor" title="Área 7 Setor 1">
+          <a href="./pages/indexM7S1.html">M7 S1</a>
+        </div>
+        <div class="setor" title="Área 7 Setor 2">
+          <a href="./pages/indexM7S2.html">M7 S2</a>
+        </div>
+        <div class="setor" title="Área 7 Setor 3">
+          <a href="./pages/indexM7S3.html">M7 S3</a>
+        </div>
+        <div class="setor" title="Área 7 Setor 4">
+          <a href="./pages/indexM7S4.html">M7 S4</a>
+        </div>
+      </div>
+
+      <!-- M8 -->
+      <div>
+        <div class="setor" title="Área 8 Setor 1">
+            <a href="./pages/indexM8S1.html">M8 S1</a>
+        </div>
+        <div class="setor" title="Área 8 Setor 2">
+            <a href="./pages/indexM8S2.html">M8 S2</a>
+        </div>
+        <div class="setor" title="Área 8 Setor 3">
+            <a href="./pages/indexM8S3.html">M8 S3</a>
+        </div>
+        <div class="setor" title="Área 8 Setor 4">
+            <a href="./pages/indexM8S4.html">M8 S4</a>
+        </div>
+      </div>
+
+      <!-- M9 -->
+      <div>
+        <div class="setor" title="Área 9 Setor 1">
+            <a href="./pages/indexM9S1.html">M9 S1</a>
+        </div>
+        <div class="setor" title="Área 9 Setor 2">
+            <a href="./pages/indexM9S2.html">M9 S2</a>
+        </div>
+        <div class="setor" title="Área 9 Setor 3">
+            <a href="./pages/indexM9S3.html">M9 S3</a>
+        </div>
+        <div class="setor" title="Área 9 Setor 4">
+            <a href="./pages/indexM9S4.html">M9 S4</a>
+        </div>
+      </div>
+    </section><!-- FIM container-de-areas-e-setores -->
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <section class="section_login">
+      <p>
+        Cadastre-se em nossa newsletter e receba informações sobre a <span class="span_color3">Finoagro</span>
+      </p>
+      <input type="email" name="input_email" id="input_email" size="10" placeholder="Digite seu email" required>
+      <button type="submit">Cadastrar</button>
+    </section>
+    <section id="section_saiba-mais">
+      <div class="section_saiba-mais-img">
+          <img src="./Imagens/Logo_Finoagro_w.png" alt="Imagem Logo_Finoagro_w">
+      </div>
+      <section class="options">
+        <div class="div_institucional">
+          <h2>INSTITUCIONAL</h2>
+          <nav>
+            <ul>
+              <li><a href="#">Sobre nós</a></li>
+              <li><a href="#">Sustentabilidade</a></li>
+              <li><a href="#">Notícias</a></li>
+              <li><a href="#">Relatório De Transparência Salarial</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="div_fale-conosco">
+            <h2>FALE CONOSCO</h2>
+            <nav>
+                <ul>
+                    <li><a href="#">Contato</a></li>
+                    <li><a href="#">Trabalhe Conosco</a></li>
+                </ul>
+            </nav>
+        </div>
+      </section>
+      <div class="section-redes-sociais">
+          <div>
+              <a href="#" target="_self" rel="noopener noreferrer">
+                  <i class="fa-brands fa-facebook"></i>
+              </a>
+          </div>
+          <div>
+              <a href="#" target="_self" rel="noopener noreferrer">
+                  <i class="fa-brands fa-twitter"></i>
+              </a>
+          </div>
+          <div>
+              <a href="#" target="_self" rel="noopener noreferrer">
+                  <i class="fa-brands fa-youtube"></i>
+              </a>
+          </div>
+          <div>
+              <a href="#" target="_self" rel="noopener noreferrer">
+                  <i class="fa-brands fa-instagram"></i>
+              </a>
+          </div>
+      </div>
+    </section>
+    <section class="section_copyrigth">
+      <p>
+          &copy; <time datetime="from 2025-09-21 to 2025-11-13">21 de Setembro à 13 de Novembro de 2025</time> Ariclecio Macêdo. <strong>All rights reserved.</strong> 
+      </p>
+      <p>
+          Desenvolvimento: Ariclecio Macêdo
+      </p>
+      <div class="section_copyrigth-icons">
+        <div>
+            <a href="#" target="_self" rel="noopener noreferrer">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+        </div>
+        <div>
+            <a href="#" target="_self" rel="noopener noreferrer">
+                <i class="fa-brands fa-twitter"></i>
+            </a>
+        </div>
+        <div>
+            <a href="#" target="_self" rel="noopener noreferrer">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+        </div>
+        <div>
+            <a href="#" target="_self" rel="noopener noreferrer">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+        </div>
+      </div>
+    </section>
+  </footer><!-- FIM Footer -->
+</body>
+</html>
