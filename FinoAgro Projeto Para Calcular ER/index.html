@@ -9,16 +9,18 @@
     <meta name="description" content="Este é exemplo de Calculadora de produção.">
 
     <!-- Para que seja possível instalar no celular -->
-    <link rel="manifest" href="manifest.json">
+    <link rel="manifest" href="./manifest.json">
     <meta name="theme-color" content="#a2d129">
-    <link rel="apple-touch-icon" href="icon-192.png">
+    <link rel="apple-touch-icon" href="./icon-192.png">
 
     <title>Calculadora de ER</title>
-    <link rel="shortcut icon" href="./icons/LetraAicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./icons/my-favicon.ico" type="image/x-icon">
 
     <!-- Estilos -->
-    <link rel="stylesheet" href="style-mobile.css">
-    <link rel="stylesheet" media="(min-width: 728px)" href="style.css">
+    <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="style-calc.css" type="text/css" media="all" />
+    <!-- <link rel="stylesheet" href="style-mobile.css"> -->
+    <!-- <link rel="stylesheet" media="(min-width: 728px)" href="style1.css"> -->
     
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -31,80 +33,160 @@
     <script src="./script/script.js" defer></script>
 </head>
 <body>
+    
+      <!-- HEADER -->
     <header>
+      <div class="logo_flags-languages">
         <div class="logo">
-            <img src="./Imagens/Logo_Finoagro.png" alt="Imagem Logo" sizes="(max-width: 800px) 100vw, 800px">
+          <a href="#section_saiba-mais">
+            <img fetchpriority="high" width="800" height="378" src="./Imagens/Logo_Finoagro.  png" alt="Imagem Logo FinoAgro" srcset="./Imagens/Logo_Finoagro-946w.png 946w, ./ Imagens/Logo_Finoagro-300w.png 300w, ./Imagens/Logo_Finoagro-768w.png 768w"  sizes="(max-width: 800px) 100vw, 800px">
+          </a>
         </div>
-    </header>
+      
+        <div class="flags_and_menu-toogle">
+          <div id="flags-languages" class="flag-size">
+            <div>
+              <a href="#">
+                <img src="Imagens/flagUSA.png" alt="Flag USA" title="English"     class="english">
+              </a>
+            </div>
+            <div>
+              <a href="#">
+                <img src="Imagens/flagBrasil.png" alt="Flag Brazil" title="Portuguese"    class="brazil">
+              </a>
+            </div>
+            <div>
+              <a href="#">
+                <img src="Imagens/flagSpain.png" alt="Flag Spain" title="Spanish"     class="spanish">
+              </a>
+            </div>
+          </div>
+          <div class="menu-mobile">
+            <div class="menu-open">
+              <i class="button-open">
+                <!-- <img src="list.svg" alt="símbolo list .svg"> -->
+                  &lt;&nbsp;menu
+              </i>
+            </div>
+            <div class="menu-closed">
+              <!-- <i class="bi bi-x-lg"></i> -->
+              <i class="button-close">X</i>
+              <div id="mobile-menu" class="menu-toogle">
+                <nav>
+                  <ul>
+                    <li><span class="span_color2"><a href="#">Home</a></span></li>
+                    <li><a href="#">Finoagro</a></li>
+                    <li><a href="#">Produtos</a></li>
+                    <li><a href="#">Sustentabilidades</a></li>
+                    <li><a href="#">Notícias</a></li>
+                    <li><a href="#">Contato</a></li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+            <div class="menu-toogle hide">
+              <nav>
+                <ul>
+                  <li><span class="span_color2"><a href="#">Home</a></span></li>
+                  <li><a href="#">Finoagro</a></li>
+                  <li><a href="#">Produtos</a></li>
+                  <li><a href="#">Sustentabilidades</a></li>
+                  <li><a href="#">Notícias</a></li>
+                  <li><a href="#">Contato</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <p class="p_copyright">
+              Este projeto têm em vista apenas mostrar as áreas e setores na Fazenda  Ubarana, e sua interface semelhante ao da FinoAgro não tem outro fins que não    seja ilustrativo.
+              Todos os direitos de imagens e outros detalhes estão reservados à <a    href="https://finoagro.com.br/" target="_blank" rel="noopener noreferrer">&copy;FinoAgro</a>.
+          </p>
+      </div>
+    </header><!-- FIM HEADER -->
+
     <main>
         <section class="container">
-            <h1>Calculadora de <span class="span_color4">ER</span> 
+            <h2>
+                <span class="span_color3">Calculadora</span> <span class="span_color5">de</span> <span class="span_color4">ER</span> 
                 <span class="span_color1">Fino</span><span class="span_color2">Agro</span>
-            </h1>
-            <p class="container_copyright">
-                Este projeto têm em vista apenas calcular o valor da produção do colaborador, e sua interface semelhante ao da FinoAgro não tem outro fins que não seja exemplificativo.
-                Todos os direitos de imagens e outros detalhes estão reservados à <a href="https://finoagro.com.br/" target="_blank" rel="noopener noreferrer">&copy;FinoAgro</a>.
-            </p>
-            <div class="container_ajuste">
-                <div>
-                    <p>Digite o número de plantas por hora:</p>
-                    <input type="number" name="plantas-por-hora" id="plantas-por-hora" required>
-                    <p>Digite as horas trabalhadas:</p>
-                    <input type="number" name="horas-trabalhadas" id="horas-trabalhadas" required> 
-                    <div class="container-resultado">
-                        <p><span>Sua meta do dia é:</span></p>
-                        <p class="plantas-por-dia">
-                            Total de plantas/dia...
-                        </p>
-                    </div>
-                </div>
-                <div>
-                    <p>Diária base:</p>
-                    <input type="number" name="diaria" id="diaria" placeholder="Digite o valor da Diária:" value="54.04">
-                    <!-- <p>Meta do dia:</p>
-                    <input type="number" name="meta-do-dia" id="meta-do-dia" placeholder="Digite a Meta do Dia:"> -->
-                    <div class="container-resultado">
-                        <p><span>Valor da planta é:</span></p>
-                        <div class="valor-planta-por-hora">
-                            Resultado...
-                        </div>
-                    </div>
-                </div>
-                <button type="submit" onclick="calcular()">CALCULAR</button>
+            </h2>
+            
+            <!-- Valor da diária com base no salário de 1.621,20;
+                input-box= input-group
+             -->
+            <div class="input-box" title="Se nenhum valor for digitado; Então o Valor da diária será com base no salário de 1.621,20">
+                <input type="number" name="" id="diaria" placeholder="Vazio = R$ 54.04">
+                <label for="diaria">Valor da Diária (R$)</label>
             </div>
+            
+            <!-- Quantidade de Plantas que serão feitas (ex: desfolhadas, roçadas, podadas etc) pelo colaborador com base em horas trabalhada por dia. -->
+            <div class="input-box" title="Quantidade de Plantas que serão feitas (ex: desfolhadas, roçadas, podadas etc) pelo colaborador com base em 8 horas trabalhada por dia.">
+                <input type="number" name="" id="meta" placeholder="plantas/dia">
+                <label for="meta">Meta de Produção (Empresa)</label>
+            </div>
+            
+            <!-- Quantidade de plantas feitas (ex: desfolhadas, roçadas, podadas etc) pelo colaborador. -->
+            <div class="input-box" title="Quantidade de plantas feitas (ex: desfolhadas, roçadas, podadas etc) pelo colaborador. ">
+                <input type="number" name="" id="input-producao" placeholder="Ex: 160 ">
+                <label for="input-producao">Produção Coletada</label>
+            </div>
+
+            <!-- botão que calcula o valor total da produção ; Isto é o total de plantas feitas durante as 8 horas de trabalho-->
+            <button onclick="calcular()">Calcular Produção</button>
+
+            <!-- Botão para Limpar o Resultado (Escondido pro padrão) -->
+             <button id="btnLimpar" onclick="limpar()">Limpar Dados</button>
+
+             <!-- Caixa com resultado -->
+              <div id="resultado" class="resultado-box"><!-- resultado-box = result-box -->
+                <div class="row">
+                    <span>Salário em (30d):</span>
+                    <span class="valor" id="salario">R$ 0,00</span><!-- val = valor e resBase = salario-->
+                </div>
+                <div class="row">
+                    <span>Valor por Planta:</span>
+                    <span class="valor" id="valor-planta">R$ 0,00</span>
+                </div>
+                <div class="row">
+                    <span>Extra por Produtividade:</span>
+                    <span class="valor" id="valor-producao">+ R$ 0,00</span><!-- valor-producao =  resExtra-->
+                </div>
+                <br>
+                <div class="row total"><!-- total = total-row ; valor-total = total-val e resultado-total = resTotal-->
+                    <span style="font-weight: 700;">Valor Líquido:</span>
+                    <span class="valor valor-total" id="resultado-total">R$ 0,00</span>
+                </div>
+              </div>
         </section>
     </main>
+
+    <!-- FOOTER -->
     <footer>
         <section class="section_login">
-            <p>
-                Cadastre-se em nossa newsletter e receba informações sobre a <span class="span_color3">Finoagro</span>
-            </p>
-            <input type="email" name="input_email" id="input_email" size="10" placeholder="Digite seu email" required>
-            <button type="submit">Cadastrar</button>
+        <p>
+            Cadastre-se em nossa newsletter e receba informações sobre a <span class="span_color3">Finoagro</span>
+        </p>
+        <input type="email" name="input_email" id="input_email" size="10" placeholder="Digite seu email" required>
+        <button type="submit">Cadastrar</button>
         </section>
-        <section class="section_saiba-mais">
-            <div class="section_saiba-mais-img">
-                <img src="./Imagens/Logo_Finoagro_w.png" alt="Imagem Logo_Finoagro_w">
-            </div>
+        <section id="section_saiba-mais">
+        <div class="section_saiba-mais-img">
+            <img src="./Imagens/Logo_Finoagro_w.png" alt="Imagem Logo_Finoagro_w">
+        </div>
+        <section class="options">
             <div class="div_institucional">
-                <h2>INSTITUCIONAL</h2>
-                <nav>
-                    <ul>
-                        <li><a href="#">Sobre nós</a></li>
-                        <li><a href="#">Sustentabilidade</a></li>
-                        <li><a href="#">Notícias</a></li>
-                        <li><a href="#">Relatório De Transparência Salarial</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="div_agricultura">
-                <h2>AGRICULTURA</h2>
-                <nav>
-                    <ul>
-                        <li><a href="#">Tipos de Mangas</a></li>
-                        <li><a href="#">Tipos de Uvas</a></li>
-                    </ul>
-                </nav>
+            <h2>INSTITUCIONAL</h2>
+            <nav>
+                <ul>
+                <li><a href="#">Sobre nós</a></li>
+                <li><a href="#">Sustentabilidade</a></li>
+                <li><a href="#">Notícias</a></li>
+                <li><a href="#">Relatório De Transparência Salarial</a></li>
+                </ul>
+            </nav>
             </div>
             <div class="div_fale-conosco">
                 <h2>FALE CONOSCO</h2>
@@ -115,59 +197,60 @@
                     </ul>
                 </nav>
             </div>
-            <div class="section-redes-sociais">
-                <div>
-                    <a href="#" target="_self" rel="noopener noreferrer">
-                        <i class="fa-brands fa-facebook"></i>
-                    </a>
-                </div>
-                <div>
-                    <a href="#" target="_self" rel="noopener noreferrer">
-                        <i class="fa-brands fa-twitter"></i>
-                    </a>
-                </div>
-                <div>
-                    <a href="#" target="_self" rel="noopener noreferrer">
-                        <i class="fa-brands fa-youtube"></i>
-                    </a>
-                </div>
-                <div>
-                    <a href="#" target="_self" rel="noopener noreferrer">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-                </div>
+        </section>
+        <div class="section-redes-sociais">
+            <div>
+                <a href="#" target="_self" rel="noopener noreferrer">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
             </div>
+            <div>
+                <a href="#" target="_self" rel="noopener noreferrer">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+            </div>
+            <div>
+                <a href="#" target="_self" rel="noopener noreferrer">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+            </div>
+            <div>
+                <a href="#" target="_self" rel="noopener noreferrer">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </div>
+        </div>
         </section>
         <section class="section_copyrigth">
-            <p>
-                &copy; <time datetime="2025-09-07">7 de Setembro de 2025</time> Ariclecio Macêdo. All rights reserved. 
-            </p>
-            <p>
-                Desenvolvimento: Ariclecio Macêdo
-            </p>
-            <div class="section_copyrigth-icons">
-                <div>
-                    <a href="#" target="_self" rel="noopener noreferrer">
-                        <i class="fa-brands fa-facebook"></i>
-                    </a>
-                </div>
-                <div>
-                    <a href="#" target="_self" rel="noopener noreferrer">
-                        <i class="fa-brands fa-twitter"></i>
-                    </a>
-                </div>
-                <div>
-                    <a href="#" target="_self" rel="noopener noreferrer">
-                        <i class="fa-brands fa-youtube"></i>
-                    </a>
-                </div>
-                <div>
-                    <a href="#" target="_self" rel="noopener noreferrer">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-                </div>
+        <p>
+            &copy; <time datetime="from 2026-04-12">12 de Abril de 2026</time> Ariclecio Macêdo. <strong>All rights reserved.</strong> 
+        </p>
+        <p>
+            Desenvolvimento: Ariclecio Macêdo
+        </p>
+        <div class="section_copyrigth-icons">
+            <div>
+                <a href="#" target="_self" rel="noopener noreferrer">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
             </div>
+            <div>
+                <a href="#" target="_self" rel="noopener noreferrer">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+            </div>
+            <div>
+                <a href="#" target="_self" rel="noopener noreferrer">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+            </div>
+            <div>
+                <a href="#" target="_self" rel="noopener noreferrer">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </div>
+        </div>
         </section>
-    </footer>
+    </footer><!-- FIM Footer -->
 </body>
 </html>

@@ -1,0 +1,288 @@
+/* Variáveis */
+:root {
+    --background-main: #0a0d0a;
+    --text-main: #f0f4f0;
+    --border-color: #2d382d;
+    --bacground-box: #141a14;
+    --finoagro-green: #a2d129;
+    --finoagro-orange: #ff9100;
+    --finoagro-red: #ff0000;
+}
+
+main {
+    font-family: sans-serif;
+    background-color: var(--cor_9);
+    /* background-image:
+        radial-gradient(at 0% 0%, rgba(162, 209, 41, 0.08) 0px, transparent 50%),
+        radial-gradient(at 100% 100%, rgba(255, 145, 0, 0.08) 0px, transparent 50%); */ 
+    color: var(--text-main);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 40px);
+    margin: 0;
+    padding: 20px;
+}
+
+/* Estilo Globais */
+main h2 {
+    color: var(--finoagro-green);
+    font-size: 1.8rem;
+
+    text-align: center;
+    letter-spacing: 2px;
+    /* text-transform: uppercase; */
+    margin-bottom: 40px;
+    text-shadow: 0 0 12px rgba(162, 209, 41, 0.3);
+}
+
+/* span´s */
+span.span_color1 {
+    color: var(--finoagro-orange);
+    font-weight: 300;
+}
+
+span.span_color2 {
+    color: var(--finoagro-green);
+}
+
+span.span_color3 {
+    color: var(--cor_4);
+    font-weight: bold;
+}
+
+span.span_color4 {
+    color: var(--cor_2);
+}
+
+span.span_color5 {
+    color: var(--cor_5);
+    font-weight: 300;
+}
+
+main section.container {
+    width: 100%;
+    background: var(--background-main);
+    border: 1px solid var(--border-color);
+    padding: 35px;
+    border-radius: 24px;
+    max-width: 380px;
+    box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.6);;
+    position: relative;
+    overflow: hidden;
+}
+/* Elemento antes da calc*/
+.container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, var(--finoagro-green), var(--finoagro-orange));
+    border-radius: 24px 24px 0 0;
+}
+/* Elemento depois da calc, e aparece via javascript*/
+.container.com-after::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 84%;
+    background: linear-gradient(355deg, var(--bacground-box), #10A9E2, var(--bacground-box));
+    border-radius: 24px 24px 0 0;
+    opacity: 0.97;
+    z-index: 9;
+}
+
+/* Estrutura para o efeito de subida suave na legendas dos inputs*/
+.input-box {
+    /* input-group */
+    position: relative;
+    margin-bottom: 25px;
+}
+
+div.input-box input{
+    width: 100%;
+    padding: 13px;
+    background: #1b241b;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    color: var(--cor_0);
+    font-size: 1.1rem;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+label {
+    /* Legendas que apontam para o campo para digitar algo */
+    position: absolute;
+    left: 13px;
+    top: 13px;
+    color: #a0ac9f;
+    font-size: 0.9rem;
+    /* text-transform: uppercase; */
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+/* 2. REMOVE O SCROLL (SETAS) DOS INPUTS */
+div.input-box input::-webkit-outer-spin-button,
+div.input-box input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+div.input-box input[type=number] {
+    -moz-appearance: textfield;
+    appearance: var(--text-main);
+    /* Firefox */
+}
+
+/* Efeito de subida: quando focado ou quando houver texto (placeholder-shown negado) */
+div.input-box input:focus+label,
+div.input-box input:not(:placeholder-shown)+label {
+    top: -22px;
+    left: 5px;
+    font-size: 0.7rem;
+    color: var(--finoagro-green);
+}
+
+div.input-box input:focus {
+    outline: none;
+    border-color: var(--finoagro-green);
+    box-shadow: 0 0 12px rgba(162, 209, 41, 0.2);
+}
+
+/* Esconde o placeholder por padrão após o efeito FLOATING LABEL*/
+div.input-box input::placeholder {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* Mostra o placeholder apenas quando o input ganhar foco */
+div.input-box input:focus::placeholder {
+    opacity: 0.5;
+    /* Opacidade menor para não brigar com o texto digitado */
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: transparent;
+    border: 2px solid var(--finoagro-green);
+    color: var(--finoagro-green);
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: var(--finoagro-green);
+    color: var(--background-main);
+    box-shadow: 0 0 25px rgba(162, 209, 41, 0.4);
+}
+
+button#btnLimpar {
+    /* Começa escondido */
+    display: none;
+    border-color: #10A9E2;
+    color: #10A9E2;
+    margin-top: 10px;
+    font-size: 0.9rem;
+    transition: .5s;
+
+    /* feito de fade (suave) */
+    opacity: 0;
+    transition: opacity 0.5s ease, background 0.3s, color 0.3s;
+}
+
+#btnLimpar.show {
+    display: block;
+    opacity: 1;
+}
+
+#btnLimpar:hover {
+    background: #10A9E2;
+    color: #052733;
+    box-shadow: 0 0 15px rgba(16, 169, 226, 0.4);
+
+
+}
+
+.resultado-box {
+    /* result-box */
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    background: rgb(0 0 0 / 97%);
+    border-radius: 15px;
+    border-right: 4px solid var(--finoagro-orange);
+    display: none;
+    animation: slideIn 0.7s ease-out;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    z-index: 99;
+    text-align: center;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    width: calc(100% - 4px);
+    height: 64%;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.row span {
+    color: #8fa08f;
+    font-size: 0.95rem;
+}
+
+.valor {
+    /* valor = val */
+    color: var(--text-main);
+    font-weight: 700;
+}
+
+.total {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid var(--border-color);
+}
+
+.valor-total {
+    font-size: 1.6rem;
+    color: var(--finoagro-orange);
+}
+.valor#valor-planta {
+    color: var(--finoagro-orange);
+}
+.valor#valor-producao {
+    color: var(--finoagro-green);
+}
+
+#resultado-total {
+    color: var(--cor_5);
+}
