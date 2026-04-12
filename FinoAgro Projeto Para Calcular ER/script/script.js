@@ -19,3 +19,7 @@ function calcular() {
         window.alert('Por favor; Não deixe campo vazio ou digite números válidos!')
     } 
 }
+/* Para Instalar no Celular */
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('./sw.js');
+}

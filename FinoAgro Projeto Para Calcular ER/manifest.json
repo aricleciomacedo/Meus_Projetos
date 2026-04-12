@@ -1,0 +1,21 @@
+{
+  "short_name": "FinoAgro Calc",
+  "name": "Calculadora de ER FinoAgro - Produção",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "background_color": "#0a0d0a",
+  "display": "standalone",
+  "theme_color": "#a2d129",
+  "description": "Calculadora de produção agrícola FinoAgro."
+}
