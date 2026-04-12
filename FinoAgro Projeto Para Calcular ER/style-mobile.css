@@ -67,6 +67,8 @@ body {
     background-size: 600px;
     background-position: 50% , 80%;
     background-attachment: fixed;
+
+    overscroll-behavior-y: contain; /* Impede o recarregamento ao puxar para baixo */
 }
 /* 
     MAIN
